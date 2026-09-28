@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#121214">
+<title>The collection | MPILO AUTO WORLD HUB LIMITED</title>
+<meta name="description" content="Discover a curated sample collection of premium SUVs, sedans and coupes. Explore vehicle details and enquire.">
+<link rel="icon" type="image/png" href="assets/mpilo-favicon.png">
+<link rel="stylesheet" href="css/collection.css">
+<script src="js/config.js" defer></script>
+<script src="js/vehicles.js" defer></script>
+<script src="js/photo-enquiry.js" defer></script>
+<script src="js/main.js" defer>
+</script>
+<script src="js/collection.js" defer>
+</script>
+</head>
+<body class="collection-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container header-inner">
+<a class="brand" href="index.html" aria-label="MPILO AUTO WORLD HUB LIMITED home">
+  <img class="brand-logo" src="assets/mpilo-logo-mark.png" alt="" width="512" height="501">
+  <span class="brand-copy"><span class="brand-name">MPILO</span><span class="brand-sub">AUTO WORLD HUB LIMITED</span></span>
+</a>
+<button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav">
+<span>
+</span>
+<span>
+</span>
+</button>
+<nav id="main-nav" class="main-nav" aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="collection.html" aria-current="page">Collection</a>
+<a href="about.html">Our story</a>
+<a href="contact.html">Contact</a>
+<a class="nav-contact" data-whatsapp href="https://wa.me/2349077509019?text=Hello%20MPILO%20AUTO%20WORLD%20HUB%20LIMITED%2C%20I%20would%20like%20to%20enquire%20about%20a%20vehicle." target="_blank" rel="noopener noreferrer">WhatsApp <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-intro">
+<div class="container">
+<p class="eyebrow">THE MPILO COLLECTION</p>
+<div class="intro-line">
+<h1>Find what<br>
+<em>moves you.</em>
+</h1>
+<p>52 distinctive cars. 14 celebrated brands.<br>Find the shape, space and drive that fit you.</p>
+</div>
+</div>
+</section>
+<section class="collection-section section-light">
+<div class="container">
+<div class="collection-toolbar">
+<div class="filter-pills" role="group" aria-label="Filter by body style">
+<button class="active" data-filter="All" aria-pressed="true">All cars <span>52</span>
+</button>
+<button data-filter="SUV" aria-pressed="false">SUV</button>
+<button data-filter="Sedan" aria-pressed="false">Sedan</button>
+<button data-filter="Coupe" aria-pressed="false">Coupé</button>
+<button data-filter="Pickup" aria-pressed="false">Pickup</button>
+<button data-filter="Hatchback" aria-pressed="false">Hatchback</button>
+<button data-filter="Convertible" aria-pressed="false">Convertible</button>
+</div>
+<div class="search-sort">
+<label class="search-field">
+<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+<circle cx="10.5" cy="10.5" r="6.5"/>
+<path d="m16 16 4 4"/>
+</svg>
+<span class="sr-only">Search by make, model, trim or fuel</span>
+<input type="search" id="car-search" placeholder="Make, model or fuel" maxlength="100" autocomplete="off">
+</label>
+<label class="sort-label">
+<span class="sr-only">Sort vehicles</span>
+<select id="car-sort">
+<option value="featured">Featured first</option>
+<option value="price-low">Price: low to high</option>
+<option value="price-high">Price: high to low</option>
+<option value="name">Name: A–Z</option>
+</select>
+</label>
+</div>
+</div>
+<div class="results-line">
+<p id="results-count" aria-live="polite">52 cars to discover</p>
+<span>Sample collection · Prices in NGN</span>
+</div>
+<div class="car-grid row row-cols-1 row-cols-md-2 row-cols-xl-3" id="inventory-grid">
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;porsche-911&quot;, &quot;name&quot;: &quot;Porsche 911 GT3 RS&quot;, &quot;make&quot;: &quot;Porsche&quot;, &quot;model&quot;: &quot;911&quot;, &quot;title&quot;: &quot;911 GT3 RS&quot;, &quot;trim&quot;: &quot;GT3 RS&quot;, &quot;generation&quot;: &quot;991&quot;, &quot;type&quot;: &quot;Coupe&quot;, &quot;label&quot;: &quot;Coupé&quot;, &quot;price&quot;: 165000000, &quot;year&quot;: &quot;2016&quot;, &quot;mileage&quot;: &quot;18,500&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;4.0L naturally aspirated flat-six&quot;, &quot;engineShort&quot;: &quot;4.0L flat-six&quot;, &quot;transmission&quot;: &quot;7-speed PDK automatic&quot;, &quot;transmissionShort&quot;: &quot;PDK automatic&quot;, &quot;drivetrain&quot;: &quot;Rear-wheel drive&quot;, &quot;driveShort&quot;: &quot;RWD&quot;, &quot;seats&quot;: 2, &quot;doors&quot;: 2, &quot;colour&quot;: &quot;Black&quot;, &quot;image&quot;: &quot;porsche.webp&quot;, &quot;tag&quot;: &quot;The driver’s collection&quot;, &quot;description&quot;: &quot;A naturally aspirated flat-six, a precise dual-clutch gearbox and an unmistakable rear wing. The 991-generation GT3 RS is a focused expression of the 911.&quot;, &quot;features&quot;: [&quot;Rear-axle steering&quot;, &quot;Porsche Active Suspension Management&quot;, &quot;Fixed rear wing&quot;, &quot;Driver-focused two-seat cabin&quot;]}" data-category="Coupe" data-price="165000000" data-name="Porsche 911 GT3 RS">
+  <button type="button" class="car-image-button" data-open-car aria-label="View Porsche 911 GT3 RS details">
+    <img src="assets/porsche.webp" alt="Porsche 911 GT3 RS — illustrative model photograph" width="1200" height="800" loading="lazy">
+    <span class="car-tag">Coupé</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Porsche</p>
+    <h3><button type="button" data-open-car>911 GT3 RS</button></h3>
+    <p class="car-trim">GT3 RS <span>·</span> 991</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2016</dd></div><div><dt>Mileage</dt><dd>18,500 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">4.0L flat-six <span>·</span> RWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦165<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Porsche 911 GT3 RS">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;mercedes-g-class&quot;, &quot;name&quot;: &quot;Mercedes-AMG G 63&quot;, &quot;make&quot;: &quot;Mercedes-Benz&quot;, &quot;model&quot;: &quot;G-Class&quot;, &quot;title&quot;: &quot;G 63&quot;, &quot;trim&quot;: &quot;AMG G 63 4MATIC&quot;, &quot;generation&quot;: &quot;W463, second generation&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;price&quot;: 210000000, &quot;year&quot;: &quot;2021&quot;, &quot;mileage&quot;: &quot;26,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;4.0L biturbo V8&quot;, &quot;engineShort&quot;: &quot;4.0L biturbo V8&quot;, &quot;transmission&quot;: &quot;9-speed AMG automatic&quot;, &quot;transmissionShort&quot;: &quot;9-speed automatic&quot;, &quot;drivetrain&quot;: &quot;AMG 4MATIC all-wheel drive&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;colour&quot;: &quot;Black&quot;, &quot;image&quot;: &quot;mercedes.webp&quot;, &quot;tag&quot;: &quot;Unmistakable presence&quot;, &quot;description&quot;: &quot;The G-Class silhouette meets AMG V8 performance. An elevated driving position and a spacious cabin make every arrival feel like an occasion.&quot;, &quot;features&quot;: [&quot;Three locking differentials&quot;, &quot;AMG RIDE CONTROL suspension&quot;, &quot;Low-range gearing&quot;, &quot;Five-seat luxury cabin&quot;]}" data-category="SUV" data-price="210000000" data-name="Mercedes-AMG G 63">
+  <button type="button" class="car-image-button" data-open-car aria-label="View Mercedes-AMG G 63 details">
+    <img src="assets/mercedes.webp" alt="Mercedes-AMG G 63 — illustrative model photograph" width="1200" height="800" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Mercedes-Benz</p>
+    <h3><button type="button" data-open-car>G 63</button></h3>
+    <p class="car-trim">AMG G 63 4MATIC <span>·</span> W463, second generation</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2021</dd></div><div><dt>Mileage</dt><dd>26,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">4.0L biturbo V8 <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦210<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Mercedes-AMG G 63">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;bmw-m3&quot;, &quot;name&quot;: &quot;BMW M3 Competition&quot;, &quot;make&quot;: &quot;BMW&quot;, &quot;model&quot;: &quot;M3&quot;, &quot;title&quot;: &quot;M3 Competition&quot;, &quot;trim&quot;: &quot;Competition with M DCT&quot;, &quot;generation&quot;: &quot;F80&quot;, &quot;type&quot;: &quot;Sedan&quot;, &quot;label&quot;: &quot;Sedan&quot;, &quot;price&quot;: 78000000, &quot;year&quot;: &quot;2018&quot;, &quot;mileage&quot;: &quot;34,500&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;3.0L twin-turbo inline-six&quot;, &quot;engineShort&quot;: &quot;3.0L twin-turbo&quot;, &quot;transmission&quot;: &quot;7-speed M DCT automatic&quot;, &quot;transmissionShort&quot;: &quot;M DCT automatic&quot;, &quot;drivetrain&quot;: &quot;Rear-wheel drive&quot;, &quot;driveShort&quot;: &quot;RWD&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 4, &quot;colour&quot;: &quot;White&quot;, &quot;image&quot;: &quot;bmw.webp&quot;, &quot;tag&quot;: &quot;Performance, every day&quot;, &quot;description&quot;: &quot;The F80 M3 combines the practicality of a four-door sedan with a twin-turbo straight-six and a purposeful chassis. This sample configuration features the Competition package and M DCT.&quot;, &quot;features&quot;: [&quot;Adaptive M suspension&quot;, &quot;Active M Differential&quot;, &quot;M sports seats&quot;, &quot;Competition package styling&quot;]}" data-category="Sedan" data-price="78000000" data-name="BMW M3 Competition">
+  <button type="button" class="car-image-button" data-open-car aria-label="View BMW M3 Competition details">
+    <img src="assets/bmw.webp" alt="BMW M3 Competition — illustrative model photograph" width="1200" height="800" loading="lazy">
+    <span class="car-tag">Sedan</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">BMW</p>
+    <h3><button type="button" data-open-car>M3 Competition</button></h3>
+    <p class="car-trim">Competition with M DCT <span>·</span> F80</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2018</dd></div><div><dt>Mileage</dt><dd>34,500 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">3.0L twin-turbo <span>·</span> RWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦78<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for BMW M3 Competition">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;range-rover-sport&quot;, &quot;name&quot;: &quot;Range Rover Sport HSE&quot;, &quot;make&quot;: &quot;Land Rover&quot;, &quot;model&quot;: &quot;Range Rover Sport&quot;, &quot;title&quot;: &quot;Range Rover Sport&quot;, &quot;trim&quot;: &quot;HSE Supercharged V6&quot;, &quot;generation&quot;: &quot;L494&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;price&quot;: 95000000, &quot;year&quot;: &quot;2017&quot;, &quot;mileage&quot;: &quot;41,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;3.0L supercharged V6&quot;, &quot;engineShort&quot;: &quot;3.0L supercharged V6&quot;, &quot;transmission&quot;: &quot;8-speed automatic&quot;, &quot;transmissionShort&quot;: &quot;8-speed automatic&quot;, &quot;drivetrain&quot;: &quot;Four-wheel drive&quot;, &quot;driveShort&quot;: &quot;4WD&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;colour&quot;: &quot;Black&quot;, &quot;image&quot;: &quot;range-rover.webp&quot;, &quot;tag&quot;: &quot;Effortless refinement&quot;, &quot;description&quot;: &quot;A commanding stance, a refined cabin and a supercharged V6. The Range Rover Sport brings together everyday comfort and a confident touring character.&quot;, &quot;features&quot;: [&quot;Electronic air suspension&quot;, &quot;Terrain Response&quot;, &quot;InControl Touch Pro infotainment&quot;, &quot;Elevated driving position&quot;]}" data-category="SUV" data-price="95000000" data-name="Range Rover Sport HSE">
+  <button type="button" class="car-image-button" data-open-car aria-label="View Range Rover Sport HSE details">
+    <img src="assets/range-rover.webp" alt="Range Rover Sport HSE — illustrative model photograph" width="1200" height="800" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Land Rover</p>
+    <h3><button type="button" data-open-car>Range Rover Sport</button></h3>
+    <p class="car-trim">HSE Supercharged V6 <span>·</span> L494</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2017</dd></div><div><dt>Mileage</dt><dd>41,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">3.0L supercharged V6 <span>·</span> 4WD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦95<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Range Rover Sport HSE">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;lexus-rx&quot;, &quot;name&quot;: &quot;Lexus RX 350&quot;, &quot;make&quot;: &quot;Lexus&quot;, &quot;model&quot;: &quot;RX&quot;, &quot;title&quot;: &quot;RX 350&quot;, &quot;trim&quot;: &quot;350 AWD&quot;, &quot;generation&quot;: &quot;Fifth generation&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;price&quot;: 88000000, &quot;year&quot;: &quot;2023&quot;, &quot;mileage&quot;: &quot;22,500&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;2.4L turbocharged inline-four&quot;, &quot;engineShort&quot;: &quot;2.4L turbo&quot;, &quot;transmission&quot;: &quot;8-speed automatic&quot;, &quot;transmissionShort&quot;: &quot;8-speed automatic&quot;, &quot;drivetrain&quot;: &quot;All-wheel drive&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;colour&quot;: &quot;White&quot;, &quot;image&quot;: &quot;lexus.webp&quot;, &quot;tag&quot;: &quot;Quiet sophistication&quot;, &quot;description&quot;: &quot;Sculpted proportions and a thoughtfully arranged cabin define the fifth-generation RX. The 350 pairs a turbocharged petrol engine with an eight-speed automatic gearbox.&quot;, &quot;features&quot;: [&quot;Lexus Safety System+ 3.0&quot;, &quot;Lexus Interface touchscreen&quot;, &quot;Five-seat cabin&quot;, &quot;Turbocharged petrol engine&quot;]}" data-category="SUV" data-price="88000000" data-name="Lexus RX 350">
+  <button type="button" class="car-image-button" data-open-car aria-label="View Lexus RX 350 details">
+    <img src="assets/lexus.webp" alt="Lexus RX 350 — illustrative model photograph" width="1200" height="800" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Lexus</p>
+    <h3><button type="button" data-open-car>RX 350</button></h3>
+    <p class="car-trim">350 AWD <span>·</span> Fifth generation</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2023</dd></div><div><dt>Mileage</dt><dd>22,500 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">2.4L turbo <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦88<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Lexus RX 350">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;toyota-camry&quot;, &quot;name&quot;: &quot;Toyota Camry SE&quot;, &quot;make&quot;: &quot;Toyota&quot;, &quot;model&quot;: &quot;Camry&quot;, &quot;title&quot;: &quot;Camry SE&quot;, &quot;trim&quot;: &quot;SE 2.5&quot;, &quot;generation&quot;: &quot;XV70&quot;, &quot;type&quot;: &quot;Sedan&quot;, &quot;label&quot;: &quot;Sedan&quot;, &quot;price&quot;: 42000000, &quot;year&quot;: &quot;2022&quot;, &quot;mileage&quot;: &quot;29,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;2.5L naturally aspirated inline-four&quot;, &quot;engineShort&quot;: &quot;2.5L petrol&quot;, &quot;transmission&quot;: &quot;8-speed automatic&quot;, &quot;transmissionShort&quot;: &quot;8-speed automatic&quot;, &quot;drivetrain&quot;: &quot;Front-wheel drive&quot;, &quot;driveShort&quot;: &quot;FWD&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 4, &quot;colour&quot;: &quot;Grey&quot;, &quot;image&quot;: &quot;toyota.webp&quot;, &quot;tag&quot;: &quot;Everyday elegance&quot;, &quot;description&quot;: &quot;An expressive sedan with space for five and a composed driving character. The SE configuration adds a sporting touch to the Camry’s everyday practicality.&quot;, &quot;features&quot;: [&quot;Toyota Safety Sense 2.5+&quot;, &quot;Sport-tuned suspension&quot;, &quot;Apple CarPlay and Android Auto&quot;, &quot;Rear-view camera&quot;]}" data-category="Sedan" data-price="42000000" data-name="Toyota Camry SE">
+  <button type="button" class="car-image-button" data-open-car aria-label="View Toyota Camry SE details">
+    <img src="assets/toyota.webp" alt="Toyota Camry SE — illustrative model photograph" width="1200" height="800" loading="lazy">
+    <span class="car-tag">Sedan</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Toyota</p>
+    <h3><button type="button" data-open-car>Camry SE</button></h3>
+    <p class="car-trim">SE 2.5 <span>·</span> XV70</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2022</dd></div><div><dt>Mileage</dt><dd>29,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">2.5L petrol <span>·</span> FWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦42<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Toyota Camry SE">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;bmw-ix&quot;, &quot;name&quot;: &quot;BMW iX xDrive50&quot;, &quot;make&quot;: &quot;BMW&quot;, &quot;model&quot;: &quot;iX&quot;, &quot;title&quot;: &quot;iX xDrive50&quot;, &quot;trim&quot;: &quot;xDrive50&quot;, &quot;generation&quot;: &quot;I20&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;price&quot;: 185000000, &quot;year&quot;: &quot;2022&quot;, &quot;mileage&quot;: &quot;15,000&quot;, &quot;fuel&quot;: &quot;Electric&quot;, &quot;engine&quot;: &quot;Dual electric motors&quot;, &quot;engineShort&quot;: &quot;Dual electric motors&quot;, &quot;transmission&quot;: &quot;Single-speed automatic&quot;, &quot;transmissionShort&quot;: &quot;Single-speed&quot;, &quot;drivetrain&quot;: &quot;Electric all-wheel drive&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;colour&quot;: &quot;Red&quot;, &quot;image&quot;: &quot;bmw-ix.webp&quot;, &quot;tag&quot;: &quot;A new kind of drive&quot;, &quot;description&quot;: &quot;A spacious electric SUV with a clean, contemporary interior. Two electric motors and all-wheel drive give the iX xDrive50 its smooth, immediate response.&quot;, &quot;features&quot;: [&quot;BMW Curved Display&quot;, &quot;BMW Operating System 8&quot;, &quot;Dual-motor all-wheel drive&quot;, &quot;DC rapid-charging capability&quot;], &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Martin Katler&quot;, &quot;source&quot;: &quot;https://unsplash.com/photos/black-mercedes-benz-c-class-xmtIXx5Gp-g&quot;, &quot;license&quot;: &quot;Unsplash License&quot;, &quot;licenseUrl&quot;: &quot;https://unsplash.com/license&quot;}}" data-category="SUV" data-price="185000000" data-name="BMW iX xDrive50">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View BMW iX xDrive50 details">
+    <img src="assets/bmw-ix.webp" alt="BMW iX xDrive50 — illustrative model photograph" width="1280" height="1600" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">BMW</p>
+    <h3><button type="button" data-open-car>iX xDrive50</button></h3>
+    <p class="car-trim">xDrive50 <span>·</span> I20</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2022</dd></div><div><dt>Mileage</dt><dd>15,000 km</dd></div><div><dt>Fuel</dt><dd>Electric</dd></div></dl>
+    <p class="car-powertrain">Dual electric motors <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦185<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for BMW iX xDrive50">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;toyota-prado&quot;, &quot;name&quot;: &quot;Toyota Land Cruiser Prado VX&quot;, &quot;make&quot;: &quot;Toyota&quot;, &quot;model&quot;: &quot;Land Cruiser Prado&quot;, &quot;title&quot;: &quot;Land Cruiser Prado&quot;, &quot;trim&quot;: &quot;VX 3.0 D-4D&quot;, &quot;generation&quot;: &quot;J150&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;price&quot;: 45000000, &quot;year&quot;: &quot;2011&quot;, &quot;mileage&quot;: &quot;85,000&quot;, &quot;fuel&quot;: &quot;Diesel&quot;, &quot;engine&quot;: &quot;3.0L turbo-diesel inline-four&quot;, &quot;engineShort&quot;: &quot;3.0L turbo-diesel&quot;, &quot;transmission&quot;: &quot;5-speed automatic&quot;, &quot;transmissionShort&quot;: &quot;5-speed automatic&quot;, &quot;drivetrain&quot;: &quot;Full-time four-wheel drive&quot;, &quot;driveShort&quot;: &quot;4WD&quot;, &quot;seats&quot;: 7, &quot;doors&quot;: 5, &quot;colour&quot;: &quot;White&quot;, &quot;image&quot;: &quot;toyota-prado.webp&quot;, &quot;tag&quot;: &quot;Room for adventure&quot;, &quot;description&quot;: &quot;A versatile seven-seat SUV with a commanding view of the road. The J150 Prado combines a practical cabin with full-time four-wheel drive and a turbo-diesel engine.&quot;, &quot;features&quot;: [&quot;Seven-seat configuration&quot;, &quot;Low-range transfer case&quot;, &quot;Split-folding rear seats&quot;, &quot;High driving position&quot;], &quot;credit&quot;: {&quot;author&quot;: &quot;OSX&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:2009-2011_Toyota_Land_Cruiser_Prado_(KDJ150R)_VX_5-door_wagon_(2011-10-25)_01.jpg&quot;, &quot;license&quot;: &quot;Public domain (released by the author)&quot;, &quot;licenseUrl&quot;: &quot;https://commons.wikimedia.org/wiki/Template:PD-user&quot;}, &quot;imageFit&quot;: &quot;contain&quot;}" data-category="SUV" data-price="45000000" data-name="Toyota Land Cruiser Prado VX">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Toyota Land Cruiser Prado VX details">
+    <img src="assets/toyota-prado.webp" alt="Toyota Land Cruiser Prado VX — illustrative model photograph" width="1400" height="800" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Toyota</p>
+    <h3><button type="button" data-open-car>Land Cruiser Prado</button></h3>
+    <p class="car-trim">VX 3.0 D-4D <span>·</span> J150</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2011</dd></div><div><dt>Mileage</dt><dd>85,000 km</dd></div><div><dt>Fuel</dt><dd>Diesel</dd></div></dl>
+    <p class="car-powertrain">3.0L turbo-diesel <span>·</span> 4WD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦45<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Toyota Land Cruiser Prado VX">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;honda-accord&quot;, &quot;name&quot;: &quot;Honda Accord Sport 1.5T&quot;, &quot;make&quot;: &quot;Honda&quot;, &quot;model&quot;: &quot;Accord&quot;, &quot;title&quot;: &quot;Accord Sport&quot;, &quot;trim&quot;: &quot;Sport 1.5T CVT&quot;, &quot;generation&quot;: &quot;Tenth generation&quot;, &quot;type&quot;: &quot;Sedan&quot;, &quot;label&quot;: &quot;Sedan&quot;, &quot;price&quot;: 38000000, &quot;year&quot;: &quot;2018&quot;, &quot;mileage&quot;: &quot;46,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;1.5L turbocharged inline-four&quot;, &quot;engineShort&quot;: &quot;1.5L turbo&quot;, &quot;transmission&quot;: &quot;CVT automatic&quot;, &quot;transmissionShort&quot;: &quot;CVT automatic&quot;, &quot;drivetrain&quot;: &quot;Front-wheel drive&quot;, &quot;driveShort&quot;: &quot;FWD&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 4, &quot;colour&quot;: &quot;Red&quot;, &quot;image&quot;: &quot;honda-accord.webp&quot;, &quot;tag&quot;: &quot;Poise meets practicality&quot;, &quot;description&quot;: &quot;A low, flowing roofline and a generous cabin give the tenth-generation Accord its appeal. The Sport 1.5T combines turbocharged performance with an automatic CVT.&quot;, &quot;features&quot;: [&quot;Honda Sensing driver assistance&quot;, &quot;Apple CarPlay and Android Auto&quot;, &quot;Sport mode with paddle shifters&quot;, &quot;19-inch alloy-wheel design&quot;], &quot;credit&quot;: {&quot;author&quot;: &quot;Kevauto&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:2018_Honda_Accord_front_4.1.18.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;}, &quot;imageFit&quot;: &quot;contain&quot;}" data-category="Sedan" data-price="38000000" data-name="Honda Accord Sport 1.5T">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Honda Accord Sport 1.5T details">
+    <img src="assets/honda-accord.webp" alt="Honda Accord Sport 1.5T — illustrative model photograph" width="1400" height="749" loading="lazy">
+    <span class="car-tag">Sedan</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Honda</p>
+    <h3><button type="button" data-open-car>Accord Sport</button></h3>
+    <p class="car-trim">Sport 1.5T CVT <span>·</span> Tenth generation</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2018</dd></div><div><dt>Mileage</dt><dd>46,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">1.5L turbo <span>·</span> FWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦38<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Honda Accord Sport 1.5T">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;mercedes-c-class&quot;, &quot;name&quot;: &quot;Mercedes-Benz C 200 Avantgarde&quot;, &quot;make&quot;: &quot;Mercedes-Benz&quot;, &quot;model&quot;: &quot;C-Class&quot;, &quot;title&quot;: &quot;C 200 Avantgarde&quot;, &quot;trim&quot;: &quot;C 200 Avantgarde&quot;, &quot;generation&quot;: &quot;W205&quot;, &quot;type&quot;: &quot;Sedan&quot;, &quot;label&quot;: &quot;Sedan&quot;, &quot;price&quot;: 41000000, &quot;year&quot;: &quot;2015&quot;, &quot;mileage&quot;: &quot;58,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;2.0L turbocharged inline-four&quot;, &quot;engineShort&quot;: &quot;2.0L turbo&quot;, &quot;transmission&quot;: &quot;7G-TRONIC PLUS automatic&quot;, &quot;transmissionShort&quot;: &quot;7-speed automatic&quot;, &quot;drivetrain&quot;: &quot;Rear-wheel drive&quot;, &quot;driveShort&quot;: &quot;RWD&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 4, &quot;colour&quot;: &quot;Silver&quot;, &quot;image&quot;: &quot;mercedes-c-class.webp&quot;, &quot;tag&quot;: &quot;Understated distinction&quot;, &quot;description&quot;: &quot;Balanced proportions and an elegant interior make the W205 C-Class an appealing executive sedan. This sample C 200 configuration pairs a turbocharged engine with 7G-TRONIC PLUS.&quot;, &quot;features&quot;: [&quot;Avantgarde exterior styling&quot;, &quot;Five-seat executive cabin&quot;, &quot;Rear-wheel-drive layout&quot;, &quot;Automatic climate control&quot;], &quot;credit&quot;: {&quot;author&quot;: &quot;M 93&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Mercedes-Benz_C_200_Avantgarde_(W_205)_%E2%80%93_Frontansicht,_26._April_2014,_D%C3%BCsseldorf.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 3.0 Germany&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/3.0/de/deed.en&quot;}, &quot;imageFit&quot;: &quot;contain&quot;}" data-category="Sedan" data-price="41000000" data-name="Mercedes-Benz C 200 Avantgarde">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Mercedes-Benz C 200 Avantgarde details">
+    <img src="assets/mercedes-c-class.webp" alt="Mercedes-Benz C 200 Avantgarde — illustrative model photograph" width="1400" height="701" loading="lazy">
+    <span class="car-tag">Sedan</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Mercedes-Benz</p>
+    <h3><button type="button" data-open-car>C 200 Avantgarde</button></h3>
+    <p class="car-trim">C 200 Avantgarde <span>·</span> W205</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2015</dd></div><div><dt>Mileage</dt><dd>58,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">2.0L turbo <span>·</span> RWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦41<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Mercedes-Benz C 200 Avantgarde">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;audi-q7&quot;, &quot;name&quot;: &quot;Audi Q7 3.0 TDI S line&quot;, &quot;make&quot;: &quot;Audi&quot;, &quot;model&quot;: &quot;Q7&quot;, &quot;title&quot;: &quot;Q7 S line&quot;, &quot;trim&quot;: &quot;3.0 TDI quattro S line&quot;, &quot;generation&quot;: &quot;4M&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;price&quot;: 75000000, &quot;year&quot;: &quot;2016&quot;, &quot;mileage&quot;: &quot;52,000&quot;, &quot;fuel&quot;: &quot;Diesel&quot;, &quot;engine&quot;: &quot;3.0L turbo-diesel V6&quot;, &quot;engineShort&quot;: &quot;3.0L turbo-diesel V6&quot;, &quot;transmission&quot;: &quot;8-speed tiptronic automatic&quot;, &quot;transmissionShort&quot;: &quot;8-speed automatic&quot;, &quot;drivetrain&quot;: &quot;quattro all-wheel drive&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;seats&quot;: 7, &quot;doors&quot;: 5, &quot;colour&quot;: &quot;White&quot;, &quot;image&quot;: &quot;audi-q7.webp&quot;, &quot;tag&quot;: &quot;Space, beautifully considered&quot;, &quot;description&quot;: &quot;A spacious, refined SUV with the security of quattro all-wheel drive. The Q7 brings together a V6 diesel, an eight-speed gearbox and flexible seating for family journeys.&quot;, &quot;features&quot;: [&quot;Seven-seat sample configuration&quot;, &quot;quattro all-wheel drive&quot;, &quot;Audi drive select&quot;, &quot;S line exterior styling&quot;], &quot;credit&quot;: {&quot;author&quot;: &quot;M 93&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Audi_Q7_3.0_TDI_quattro_S-line_(II)_%E2%80%93_Frontansicht,_3._Januar_2016,_D%C3%BCsseldorf.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 3.0 Germany&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/3.0/de/deed.en&quot;}, &quot;imageFit&quot;: &quot;contain&quot;}" data-category="SUV" data-price="75000000" data-name="Audi Q7 3.0 TDI S line">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Audi Q7 3.0 TDI S line details">
+    <img src="assets/audi-q7.webp" alt="Audi Q7 3.0 TDI S line — illustrative model photograph" width="1400" height="684" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Audi</p>
+    <h3><button type="button" data-open-car>Q7 S line</button></h3>
+    <p class="car-trim">3.0 TDI quattro S line <span>·</span> 4M</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2016</dd></div><div><dt>Mileage</dt><dd>52,000 km</dd></div><div><dt>Fuel</dt><dd>Diesel</dd></div></dl>
+    <p class="car-powertrain">3.0L turbo-diesel V6 <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦75<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Audi Q7 3.0 TDI S line">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;ford-mustang&quot;, &quot;name&quot;: &quot;Ford Mustang GT&quot;, &quot;make&quot;: &quot;Ford&quot;, &quot;model&quot;: &quot;Mustang&quot;, &quot;title&quot;: &quot;Mustang GT&quot;, &quot;trim&quot;: &quot;GT 5.0 Fastback&quot;, &quot;generation&quot;: &quot;S550&quot;, &quot;type&quot;: &quot;Coupe&quot;, &quot;label&quot;: &quot;Coupé&quot;, &quot;price&quot;: 72000000, &quot;year&quot;: &quot;2017&quot;, &quot;mileage&quot;: &quot;38,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;5.0L naturally aspirated V8&quot;, &quot;engineShort&quot;: &quot;5.0L V8&quot;, &quot;transmission&quot;: &quot;6-speed SelectShift automatic&quot;, &quot;transmissionShort&quot;: &quot;6-speed automatic&quot;, &quot;drivetrain&quot;: &quot;Rear-wheel drive&quot;, &quot;driveShort&quot;: &quot;RWD&quot;, &quot;seats&quot;: 4, &quot;doors&quot;: 2, &quot;colour&quot;: &quot;Blue&quot;, &quot;image&quot;: &quot;ford-mustang.webp&quot;, &quot;tag&quot;: &quot;An American original&quot;, &quot;description&quot;: &quot;A long bonnet, a fastback silhouette and the character of a naturally aspirated V8. The S550 Mustang GT brings a distinctive sense of theatre to the open road.&quot;, &quot;features&quot;: [&quot;Independent rear suspension&quot;, &quot;Selectable steering modes&quot;, &quot;V8 petrol power&quot;, &quot;Four-seat fastback cabin&quot;], &quot;credit&quot;: {&quot;author&quot;: &quot;Vauxford&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:2018_Ford_Mustang_5.0.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;}, &quot;imageFit&quot;: &quot;contain&quot;}" data-category="Coupe" data-price="72000000" data-name="Ford Mustang GT">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Ford Mustang GT details">
+    <img src="assets/ford-mustang.webp" alt="Ford Mustang GT — illustrative model photograph" width="1400" height="652" loading="lazy">
+    <span class="car-tag">Coupé</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Ford</p>
+    <h3><button type="button" data-open-car>Mustang GT</button></h3>
+    <p class="car-trim">GT 5.0 Fastback <span>·</span> S550</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2017</dd></div><div><dt>Mileage</dt><dd>38,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">5.0L V8 <span>·</span> RWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦72<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Ford Mustang GT">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;mercedes-e-class&quot;, &quot;make&quot;: &quot;Mercedes-Benz&quot;, &quot;model&quot;: &quot;E-Class&quot;, &quot;title&quot;: &quot;E 300&quot;, &quot;trim&quot;: &quot;E 300&quot;, &quot;generation&quot;: &quot;W213&quot;, &quot;type&quot;: &quot;Sedan&quot;, &quot;year&quot;: &quot;2018&quot;, &quot;price&quot;: 68000000, &quot;mileage&quot;: &quot;41,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;2.0L turbocharged inline-four&quot;, &quot;transmission&quot;: &quot;9G-TRONIC automatic&quot;, &quot;drivetrain&quot;: &quot;Rear-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 4, &quot;name&quot;: &quot;Mercedes-Benz E 300&quot;, &quot;label&quot;: &quot;Sedan&quot;, &quot;image&quot;: &quot;mercedes-e-class.webp&quot;, &quot;colour&quot;: &quot;Silver (pictured)&quot;, &quot;tag&quot;: &quot;Executive composure&quot;, &quot;description&quot;: &quot;The W213 E-Class balances flowing proportions with a calm, carefully arranged cabin. This E 300 sample pairs a turbocharged petrol engine with a nine-speed automatic.&quot;, &quot;features&quot;: [&quot;Executive five-seat cabin&quot;, &quot;Turbocharged petrol engine&quot;, &quot;9G-TRONIC gearbox&quot;, &quot;Rear-wheel-drive configuration&quot;], &quot;engineShort&quot;: &quot;2.0L turbo 4-cylinder&quot;, &quot;driveShort&quot;: &quot;RWD&quot;, &quot;transmissionShort&quot;: &quot;9G-TRONIC automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;OWS Photography&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Mercedes-Benz_E300_(W213)_Washington_DC_Metro_Area,_USA.jpg&quot;, &quot;license&quot;: &quot;CC BY 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by/4.0&quot;}}" data-category="Sedan" data-price="68000000" data-name="Mercedes-Benz E 300">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Mercedes-Benz E 300 details">
+    <img src="assets/mercedes-e-class.webp" alt="Mercedes-Benz E 300 — illustrative model photograph" width="1200" height="960" loading="lazy">
+    <span class="car-tag">Sedan</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Mercedes-Benz</p>
+    <h3><button type="button" data-open-car>E 300</button></h3>
+    <p class="car-trim">E 300 <span>·</span> W213</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2018</dd></div><div><dt>Mileage</dt><dd>41,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">2.0L turbo 4-cylinder <span>·</span> RWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦68<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Mercedes-Benz E 300">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;mercedes-s-class&quot;, &quot;make&quot;: &quot;Mercedes-Benz&quot;, &quot;model&quot;: &quot;S-Class&quot;, &quot;title&quot;: &quot;S 450&quot;, &quot;trim&quot;: &quot;S 450&quot;, &quot;generation&quot;: &quot;W222&quot;, &quot;type&quot;: &quot;Sedan&quot;, &quot;year&quot;: &quot;2018&quot;, &quot;price&quot;: 135000000, &quot;mileage&quot;: &quot;37,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;3.0L biturbo V6&quot;, &quot;transmission&quot;: &quot;9G-TRONIC automatic&quot;, &quot;drivetrain&quot;: &quot;Rear-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 4, &quot;name&quot;: &quot;Mercedes-Benz S 450&quot;, &quot;label&quot;: &quot;Sedan&quot;, &quot;image&quot;: &quot;mercedes-s-class.webp&quot;, &quot;colour&quot;: &quot;Black (pictured)&quot;, &quot;tag&quot;: &quot;Flagship refinement&quot;, &quot;description&quot;: &quot;The W222 S-Class brings a generous cabin and a composed touring character to a flagship sedan. This S 450 sample uses a biturbo V6 and a nine-speed automatic.&quot;, &quot;features&quot;: [&quot;AIRMATIC air suspension&quot;, &quot;Spacious rear seating&quot;, &quot;Biturbo V6 power&quot;, &quot;Flagship sedan proportions&quot;], &quot;engineShort&quot;: &quot;3.0L biturbo V6&quot;, &quot;driveShort&quot;: &quot;RWD&quot;, &quot;transmissionShort&quot;: &quot;9G-TRONIC automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;OWS Photography&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Mercedes-Benz_S450_(W222)_Washington_DC_Metro_Area,_USA.jpg&quot;, &quot;license&quot;: &quot;CC BY 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by/4.0&quot;}}" data-category="Sedan" data-price="135000000" data-name="Mercedes-Benz S 450">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Mercedes-Benz S 450 details">
+    <img src="assets/mercedes-s-class.webp" alt="Mercedes-Benz S 450 — illustrative model photograph" width="1280" height="853" loading="lazy">
+    <span class="car-tag">Sedan</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Mercedes-Benz</p>
+    <h3><button type="button" data-open-car>S 450</button></h3>
+    <p class="car-trim">S 450 <span>·</span> W222</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2018</dd></div><div><dt>Mileage</dt><dd>37,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">3.0L biturbo V6 <span>·</span> RWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦135<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Mercedes-Benz S 450">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;mercedes-gle&quot;, &quot;make&quot;: &quot;Mercedes-Benz&quot;, &quot;model&quot;: &quot;GLE&quot;, &quot;title&quot;: &quot;GLE 350&quot;, &quot;trim&quot;: &quot;GLE 350 4MATIC&quot;, &quot;generation&quot;: &quot;W166&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2018&quot;, &quot;price&quot;: 82000000, &quot;mileage&quot;: &quot;46,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;3.5L naturally aspirated V6&quot;, &quot;transmission&quot;: &quot;7G-TRONIC PLUS automatic&quot;, &quot;drivetrain&quot;: &quot;4MATIC all-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Mercedes-Benz GLE 350&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;mercedes-gle.webp&quot;, &quot;colour&quot;: &quot;Black (pictured)&quot;, &quot;tag&quot;: &quot;Comfort with presence&quot;, &quot;description&quot;: &quot;A spacious five-seat SUV with a high driving position and a naturally aspirated V6. The W166 GLE combines everyday versatility with a recognisable Mercedes-Benz profile.&quot;, &quot;features&quot;: [&quot;4MATIC all-wheel drive&quot;, &quot;Five-seat SUV cabin&quot;, &quot;Naturally aspirated V6&quot;, &quot;Flexible rear luggage space&quot;], &quot;engineShort&quot;: &quot;3.5L V6&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;7G-TRONIC PLUS automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;OWS Photography&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Mercedes-Benz_GLE350_(W166)_Washington_DC_Metro_Area,_USA.jpg&quot;, &quot;license&quot;: &quot;CC BY 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by/4.0&quot;}}" data-category="SUV" data-price="82000000" data-name="Mercedes-Benz GLE 350">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Mercedes-Benz GLE 350 details">
+    <img src="assets/mercedes-gle.webp" alt="Mercedes-Benz GLE 350 — illustrative model photograph" width="1200" height="960" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Mercedes-Benz</p>
+    <h3><button type="button" data-open-car>GLE 350</button></h3>
+    <p class="car-trim">GLE 350 4MATIC <span>·</span> W166</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2018</dd></div><div><dt>Mileage</dt><dd>46,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">3.5L V6 <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦82<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Mercedes-Benz GLE 350">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;mercedes-glc&quot;, &quot;make&quot;: &quot;Mercedes-Benz&quot;, &quot;model&quot;: &quot;GLC&quot;, &quot;title&quot;: &quot;GLC 300&quot;, &quot;trim&quot;: &quot;GLC 300 4MATIC&quot;, &quot;generation&quot;: &quot;X253&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2019&quot;, &quot;price&quot;: 72000000, &quot;mileage&quot;: &quot;33,500&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;2.0L turbocharged inline-four&quot;, &quot;transmission&quot;: &quot;9G-TRONIC automatic&quot;, &quot;drivetrain&quot;: &quot;4MATIC all-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Mercedes-Benz GLC 300&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;mercedes-glc.webp&quot;, &quot;colour&quot;: &quot;White (pictured)&quot;, &quot;tag&quot;: &quot;Refined versatility&quot;, &quot;description&quot;: &quot;The GLC offers SUV practicality in a manageable footprint. A turbocharged engine, automatic gearbox and 4MATIC configuration make this sample a versatile daily choice.&quot;, &quot;features&quot;: [&quot;4MATIC configuration&quot;, &quot;Five-seat cabin&quot;, &quot;9G-TRONIC gearbox&quot;, &quot;Split-folding rear seats&quot;], &quot;engineShort&quot;: &quot;2.0L turbo 4-cylinder&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;9G-TRONIC automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Charles from Port Chester, New York&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Mercedes-Benz_GLC_300_4MATIC_(X253,_2019)_(52721034935).jpg&quot;, &quot;license&quot;: &quot;CC BY 2.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by/2.0&quot;}}" data-category="SUV" data-price="72000000" data-name="Mercedes-Benz GLC 300">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Mercedes-Benz GLC 300 details">
+    <img src="assets/mercedes-glc.webp" alt="Mercedes-Benz GLC 300 — illustrative model photograph" width="1280" height="845" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Mercedes-Benz</p>
+    <h3><button type="button" data-open-car>GLC 300</button></h3>
+    <p class="car-trim">GLC 300 4MATIC <span>·</span> X253</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2019</dd></div><div><dt>Mileage</dt><dd>33,500 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">2.0L turbo 4-cylinder <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦72<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Mercedes-Benz GLC 300">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;mercedes-cla&quot;, &quot;make&quot;: &quot;Mercedes-Benz&quot;, &quot;model&quot;: &quot;CLA&quot;, &quot;title&quot;: &quot;CLA 250&quot;, &quot;trim&quot;: &quot;CLA 250&quot;, &quot;generation&quot;: &quot;C117&quot;, &quot;type&quot;: &quot;Sedan&quot;, &quot;year&quot;: &quot;2018&quot;, &quot;price&quot;: 46000000, &quot;mileage&quot;: &quot;49,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;2.0L turbocharged inline-four&quot;, &quot;transmission&quot;: &quot;7-speed dual-clutch automatic&quot;, &quot;drivetrain&quot;: &quot;Front-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 4, &quot;name&quot;: &quot;Mercedes-Benz CLA 250&quot;, &quot;label&quot;: &quot;Sedan&quot;, &quot;image&quot;: &quot;mercedes-cla.webp&quot;, &quot;colour&quot;: &quot;Black (pictured)&quot;, &quot;tag&quot;: &quot;A distinctive silhouette&quot;, &quot;description&quot;: &quot;The CLA brings a flowing roofline and compact proportions to a four-door car. The CLA 250 combines a turbocharged petrol engine with a dual-clutch automatic.&quot;, &quot;features&quot;: [&quot;Four-door coupe styling&quot;, &quot;Turbocharged petrol engine&quot;, &quot;Dual-clutch transmission&quot;, &quot;Compact executive cabin&quot;], &quot;engineShort&quot;: &quot;2.0L turbo 4-cylinder&quot;, &quot;driveShort&quot;: &quot;FWD&quot;, &quot;transmissionShort&quot;: &quot;7-speed dual-clutch automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;OWS Photography&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Mercedes-Benz_CLA250_(C117)_Washington_DC_Metro_Area,_USA.jpg&quot;, &quot;license&quot;: &quot;CC BY 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by/4.0&quot;}}" data-category="Sedan" data-price="46000000" data-name="Mercedes-Benz CLA 250">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Mercedes-Benz CLA 250 details">
+    <img src="assets/mercedes-cla.webp" alt="Mercedes-Benz CLA 250 — illustrative model photograph" width="1200" height="960" loading="lazy">
+    <span class="car-tag">Sedan</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Mercedes-Benz</p>
+    <h3><button type="button" data-open-car>CLA 250</button></h3>
+    <p class="car-trim">CLA 250 <span>·</span> C117</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2018</dd></div><div><dt>Mileage</dt><dd>49,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">2.0L turbo 4-cylinder <span>·</span> FWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦46<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Mercedes-Benz CLA 250">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;bmw-x5&quot;, &quot;make&quot;: &quot;BMW&quot;, &quot;model&quot;: &quot;X5&quot;, &quot;title&quot;: &quot;X5 xDrive40i&quot;, &quot;trim&quot;: &quot;xDrive40i&quot;, &quot;generation&quot;: &quot;G05&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;price&quot;: 125000000, &quot;mileage&quot;: &quot;31,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;3.0L turbocharged inline-six&quot;, &quot;transmission&quot;: &quot;8-speed Steptronic automatic&quot;, &quot;drivetrain&quot;: &quot;xDrive all-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;name&quot;: &quot;BMW X5 xDrive40i&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;bmw-x5.webp&quot;, &quot;colour&quot;: &quot;White (pictured)&quot;, &quot;tag&quot;: &quot;The versatile all-rounder&quot;, &quot;description&quot;: &quot;The G05 X5 pairs a roomy interior with the smooth delivery of a turbocharged straight-six. This xDrive40i sample offers all-wheel drive and seating for five.&quot;, &quot;features&quot;: [&quot;BMW iDrive infotainment&quot;, &quot;xDrive all-wheel drive&quot;, &quot;Split tailgate&quot;, &quot;Five-seat configuration&quot;], &quot;engineShort&quot;: &quot;3.0L turbo straight-six&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;8-speed Steptronic automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Damian B Oh&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:BMW_G05_X5_xDrive40i_M_Sport_Mineral_White_Metallic_(1).jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0&quot;}}" data-category="SUV" data-price="125000000" data-name="BMW X5 xDrive40i">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View BMW X5 xDrive40i details">
+    <img src="assets/bmw-x5.webp" alt="BMW X5 xDrive40i — illustrative model photograph" width="1280" height="960" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">BMW</p>
+    <h3><button type="button" data-open-car>X5 xDrive40i</button></h3>
+    <p class="car-trim">xDrive40i <span>·</span> G05</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2020</dd></div><div><dt>Mileage</dt><dd>31,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">3.0L turbo straight-six <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦125<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for BMW X5 xDrive40i">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;bmw-x6&quot;, &quot;make&quot;: &quot;BMW&quot;, &quot;model&quot;: &quot;X6&quot;, &quot;title&quot;: &quot;X6 xDrive40i&quot;, &quot;trim&quot;: &quot;xDrive40i&quot;, &quot;generation&quot;: &quot;G06&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;price&quot;: 155000000, &quot;mileage&quot;: &quot;27,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;3.0L turbocharged inline-six&quot;, &quot;transmission&quot;: &quot;8-speed Steptronic automatic&quot;, &quot;drivetrain&quot;: &quot;xDrive all-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;name&quot;: &quot;BMW X6 xDrive40i&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;bmw-x6.webp&quot;, &quot;colour&quot;: &quot;Grey (pictured)&quot;, &quot;tag&quot;: &quot;A confident statement&quot;, &quot;description&quot;: &quot;A sloping roofline and a broad stance set the X6 apart. Its xDrive40i configuration combines a turbocharged straight-six with an eight-speed automatic.&quot;, &quot;features&quot;: [&quot;Coupe-inspired SUV profile&quot;, &quot;xDrive all-wheel drive&quot;, &quot;BMW iDrive infotainment&quot;, &quot;Five-seat cabin&quot;], &quot;engineShort&quot;: &quot;3.0L turbo straight-six&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;8-speed Steptronic automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Charles from Port Chester, New York&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:BMW_X6_xDrive40i_(G06,_2021)_(52722432368).jpg&quot;, &quot;license&quot;: &quot;CC BY 2.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by/2.0&quot;}}" data-category="SUV" data-price="155000000" data-name="BMW X6 xDrive40i">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View BMW X6 xDrive40i details">
+    <img src="assets/bmw-x6.webp" alt="BMW X6 xDrive40i — illustrative model photograph" width="1280" height="659" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">BMW</p>
+    <h3><button type="button" data-open-car>X6 xDrive40i</button></h3>
+    <p class="car-trim">xDrive40i <span>·</span> G06</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2021</dd></div><div><dt>Mileage</dt><dd>27,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">3.0L turbo straight-six <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦155<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for BMW X6 xDrive40i">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;bmw-x7&quot;, &quot;make&quot;: &quot;BMW&quot;, &quot;model&quot;: &quot;X7&quot;, &quot;title&quot;: &quot;X7 xDrive40i&quot;, &quot;trim&quot;: &quot;xDrive40i&quot;, &quot;generation&quot;: &quot;G07&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;price&quot;: 178000000, &quot;mileage&quot;: &quot;34,500&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;3.0L turbocharged inline-six&quot;, &quot;transmission&quot;: &quot;8-speed Steptronic automatic&quot;, &quot;drivetrain&quot;: &quot;xDrive all-wheel drive&quot;, &quot;seats&quot;: 7, &quot;doors&quot;: 5, &quot;name&quot;: &quot;BMW X7 xDrive40i&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;bmw-x7.webp&quot;, &quot;colour&quot;: &quot;Grey (pictured)&quot;, &quot;tag&quot;: &quot;Space without compromise&quot;, &quot;description&quot;: &quot;BMW’s large SUV offers a generous three-row layout and a commanding driving position. The xDrive40i configuration brings straight-six power to longer family journeys.&quot;, &quot;features&quot;: [&quot;Three-row seating&quot;, &quot;Two-axle air suspension&quot;, &quot;BMW iDrive infotainment&quot;, &quot;xDrive all-wheel drive&quot;], &quot;engineShort&quot;: &quot;3.0L turbo straight-six&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;8-speed Steptronic automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;HJUdall&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:20_BMW_X7_xDrive40i.jpg&quot;, &quot;license&quot;: &quot;CC0&quot;, &quot;licenseUrl&quot;: &quot;http://creativecommons.org/publicdomain/zero/1.0/deed.en&quot;}}" data-category="SUV" data-price="178000000" data-name="BMW X7 xDrive40i">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View BMW X7 xDrive40i details">
+    <img src="assets/bmw-x7.webp" alt="BMW X7 xDrive40i — illustrative model photograph" width="1280" height="960" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">BMW</p>
+    <h3><button type="button" data-open-car>X7 xDrive40i</button></h3>
+    <p class="car-trim">xDrive40i <span>·</span> G07</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2020</dd></div><div><dt>Mileage</dt><dd>34,500 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">3.0L turbo straight-six <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦178<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for BMW X7 xDrive40i">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;bmw-5-series&quot;, &quot;make&quot;: &quot;BMW&quot;, &quot;model&quot;: &quot;5 Series&quot;, &quot;title&quot;: &quot;530i&quot;, &quot;trim&quot;: &quot;530i&quot;, &quot;generation&quot;: &quot;G30&quot;, &quot;type&quot;: &quot;Sedan&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;price&quot;: 69000000, &quot;mileage&quot;: &quot;38,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;2.0L turbocharged inline-four&quot;, &quot;transmission&quot;: &quot;8-speed Steptronic automatic&quot;, &quot;drivetrain&quot;: &quot;Rear-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 4, &quot;name&quot;: &quot;BMW 530i&quot;, &quot;label&quot;: &quot;Sedan&quot;, &quot;image&quot;: &quot;bmw-5-series.webp&quot;, &quot;colour&quot;: &quot;White (pictured)&quot;, &quot;tag&quot;: &quot;Business, with character&quot;, &quot;description&quot;: &quot;Clean proportions and a driver-focused cabin define the G30 5 Series. The 530i is a balanced executive sedan with a turbocharged four-cylinder engine.&quot;, &quot;features&quot;: [&quot;BMW iDrive infotainment&quot;, &quot;Executive five-seat layout&quot;, &quot;8-speed Steptronic gearbox&quot;, &quot;Rear-wheel-drive configuration&quot;], &quot;engineShort&quot;: &quot;2.0L turbo 4-cylinder&quot;, &quot;driveShort&quot;: &quot;RWD&quot;, &quot;transmissionShort&quot;: &quot;8-speed Steptronic automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Dinkun Chen&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:BMW_530i_(G30)_China.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0&quot;}}" data-category="Sedan" data-price="69000000" data-name="BMW 530i">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View BMW 530i details">
+    <img src="assets/bmw-5-series.webp" alt="BMW 530i — illustrative model photograph" width="1280" height="839" loading="lazy">
+    <span class="car-tag">Sedan</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">BMW</p>
+    <h3><button type="button" data-open-car>530i</button></h3>
+    <p class="car-trim">530i <span>·</span> G30</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2021</dd></div><div><dt>Mileage</dt><dd>38,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">2.0L turbo 4-cylinder <span>·</span> RWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦69<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for BMW 530i">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;volkswagen-golf&quot;, &quot;make&quot;: &quot;Volkswagen&quot;, &quot;model&quot;: &quot;Golf&quot;, &quot;title&quot;: &quot;Golf GTI&quot;, &quot;trim&quot;: &quot;GTI DSG&quot;, &quot;generation&quot;: &quot;Mk7&quot;, &quot;type&quot;: &quot;Hatchback&quot;, &quot;year&quot;: &quot;2016&quot;, &quot;price&quot;: 34000000, &quot;mileage&quot;: &quot;51,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;2.0L turbocharged inline-four&quot;, &quot;transmission&quot;: &quot;6-speed DSG automatic&quot;, &quot;drivetrain&quot;: &quot;Front-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Volkswagen Golf GTI&quot;, &quot;label&quot;: &quot;Hatchback&quot;, &quot;image&quot;: &quot;volkswagen-golf.webp&quot;, &quot;colour&quot;: &quot;Red (pictured)&quot;, &quot;tag&quot;: &quot;Compact, with spirit&quot;, &quot;description&quot;: &quot;The Golf GTI puts performance into an everyday hatchback. Compact dimensions, a turbocharged petrol engine and a practical five-door layout make it an engaging all-rounder.&quot;, &quot;features&quot;: [&quot;Five-door hatchback practicality&quot;, &quot;GTI sports-seat design&quot;, &quot;DSG dual-clutch gearbox&quot;, &quot;Split-folding rear seats&quot;], &quot;engineShort&quot;: &quot;2.0L turbo 4-cylinder&quot;, &quot;driveShort&quot;: &quot;FWD&quot;, &quot;transmissionShort&quot;: &quot;6-speed DSG automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Overlaet&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_VII_GTI_(front_quarter)_red.JPG&quot;, &quot;license&quot;: &quot;CC BY-SA 3.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/3.0&quot;}}" data-category="Hatchback" data-price="34000000" data-name="Volkswagen Golf GTI">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Volkswagen Golf GTI details">
+    <img src="assets/volkswagen-golf.webp" alt="Volkswagen Golf GTI — illustrative model photograph" width="1280" height="815" loading="lazy">
+    <span class="car-tag">Hatchback</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Volkswagen</p>
+    <h3><button type="button" data-open-car>Golf GTI</button></h3>
+    <p class="car-trim">GTI DSG <span>·</span> Mk7</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2016</dd></div><div><dt>Mileage</dt><dd>51,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">2.0L turbo 4-cylinder <span>·</span> FWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦34<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Volkswagen Golf GTI">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;bmw-m4&quot;, &quot;make&quot;: &quot;BMW&quot;, &quot;model&quot;: &quot;M4&quot;, &quot;title&quot;: &quot;M4 Competition&quot;, &quot;trim&quot;: &quot;Competition with M DCT&quot;, &quot;generation&quot;: &quot;F82&quot;, &quot;type&quot;: &quot;Coupe&quot;, &quot;year&quot;: &quot;2018&quot;, &quot;price&quot;: 86000000, &quot;mileage&quot;: &quot;29,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;3.0L twin-turbo inline-six&quot;, &quot;transmission&quot;: &quot;7-speed M DCT automatic&quot;, &quot;drivetrain&quot;: &quot;Rear-wheel drive&quot;, &quot;seats&quot;: 4, &quot;doors&quot;: 2, &quot;name&quot;: &quot;BMW M4 Competition&quot;, &quot;label&quot;: &quot;Coupé&quot;, &quot;image&quot;: &quot;bmw-m4.webp&quot;, &quot;colour&quot;: &quot;White (pictured)&quot;, &quot;tag&quot;: &quot;A focused performance coupe&quot;, &quot;description&quot;: &quot;The F82 M4 combines a two-door silhouette with twin-turbo straight-six performance. This sample features the Competition package and the seven-speed M dual-clutch gearbox.&quot;, &quot;features&quot;: [&quot;Adaptive M suspension&quot;, &quot;Active M Differential&quot;, &quot;M sports seats&quot;, &quot;Competition package styling&quot;], &quot;engineShort&quot;: &quot;3.0L twin-turbo straight-six&quot;, &quot;driveShort&quot;: &quot;RWD&quot;, &quot;transmissionShort&quot;: &quot;7-speed M DCT automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Tokumeigakarinoaoshima&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:BMW_M4_Coupe_(F82)_front.JPG&quot;, &quot;license&quot;: &quot;CC0&quot;, &quot;licenseUrl&quot;: &quot;http://creativecommons.org/publicdomain/zero/1.0/deed.en&quot;}}" data-category="Coupe" data-price="86000000" data-name="BMW M4 Competition">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View BMW M4 Competition details">
+    <img src="assets/bmw-m4.webp" alt="BMW M4 Competition — illustrative model photograph" width="1280" height="922" loading="lazy">
+    <span class="car-tag">Coupé</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">BMW</p>
+    <h3><button type="button" data-open-car>M4 Competition</button></h3>
+    <p class="car-trim">Competition with M DCT <span>·</span> F82</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2018</dd></div><div><dt>Mileage</dt><dd>29,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">3.0L twin-turbo straight-six <span>·</span> RWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦86<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for BMW M4 Competition">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;bmw-i4&quot;, &quot;make&quot;: &quot;BMW&quot;, &quot;model&quot;: &quot;i4&quot;, &quot;title&quot;: &quot;i4 eDrive40&quot;, &quot;trim&quot;: &quot;eDrive40&quot;, &quot;generation&quot;: &quot;G26&quot;, &quot;type&quot;: &quot;Sedan&quot;, &quot;year&quot;: &quot;2022&quot;, &quot;price&quot;: 112000000, &quot;mileage&quot;: &quot;18,000&quot;, &quot;fuel&quot;: &quot;Electric&quot;, &quot;engine&quot;: &quot;Single electric motor&quot;, &quot;transmission&quot;: &quot;Single-speed automatic&quot;, &quot;drivetrain&quot;: &quot;Rear-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;name&quot;: &quot;BMW i4 eDrive40&quot;, &quot;label&quot;: &quot;Sedan&quot;, &quot;image&quot;: &quot;bmw-i4.webp&quot;, &quot;colour&quot;: &quot;White (pictured)&quot;, &quot;tag&quot;: &quot;Electric, with a sporting edge&quot;, &quot;description&quot;: &quot;A low, flowing Gran Coupe profile meets electric power. The i4 eDrive40 uses a single rear motor and offers a practical liftback opening behind its five-seat cabin.&quot;, &quot;features&quot;: [&quot;BMW Curved Display&quot;, &quot;Electric rear-wheel drive&quot;, &quot;Five-door liftback access&quot;, &quot;DC rapid-charging capability&quot;], &quot;engineShort&quot;: &quot;Single electric motor&quot;, &quot;driveShort&quot;: &quot;RWD&quot;, &quot;transmissionShort&quot;: &quot;Single-speed automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;HJUdall&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:23_BMW_i4_eDrive40.jpg&quot;, &quot;license&quot;: &quot;CC0&quot;, &quot;licenseUrl&quot;: &quot;http://creativecommons.org/publicdomain/zero/1.0/deed.en&quot;}}" data-category="Sedan" data-price="112000000" data-name="BMW i4 eDrive40">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View BMW i4 eDrive40 details">
+    <img src="assets/bmw-i4.webp" alt="BMW i4 eDrive40 — illustrative model photograph" width="1280" height="960" loading="lazy">
+    <span class="car-tag">Sedan</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">BMW</p>
+    <h3><button type="button" data-open-car>i4 eDrive40</button></h3>
+    <p class="car-trim">eDrive40 <span>·</span> G26</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2022</dd></div><div><dt>Mileage</dt><dd>18,000 km</dd></div><div><dt>Fuel</dt><dd>Electric</dd></div></dl>
+    <p class="car-powertrain">Single electric motor <span>·</span> RWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦112<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for BMW i4 eDrive40">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;audi-a4&quot;, &quot;make&quot;: &quot;Audi&quot;, &quot;model&quot;: &quot;A4&quot;, &quot;title&quot;: &quot;A4 2.0 TFSI&quot;, &quot;trim&quot;: &quot;2.0 TFSI quattro&quot;, &quot;generation&quot;: &quot;B9&quot;, &quot;type&quot;: &quot;Sedan&quot;, &quot;year&quot;: &quot;2019&quot;, &quot;price&quot;: 54000000, &quot;mileage&quot;: &quot;42,500&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;2.0L turbocharged inline-four&quot;, &quot;transmission&quot;: &quot;7-speed S tronic automatic&quot;, &quot;drivetrain&quot;: &quot;quattro all-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 4, &quot;name&quot;: &quot;Audi A4 2.0 TFSI&quot;, &quot;label&quot;: &quot;Sedan&quot;, &quot;image&quot;: &quot;audi-a4.webp&quot;, &quot;colour&quot;: &quot;Red (pictured)&quot;, &quot;tag&quot;: &quot;Precision in the details&quot;, &quot;description&quot;: &quot;The A4 offers clean exterior lines and a carefully ordered interior. This B9 sample pairs a turbocharged petrol engine with S tronic and quattro all-wheel drive.&quot;, &quot;features&quot;: [&quot;Audi MMI infotainment&quot;, &quot;quattro configuration&quot;, &quot;S tronic dual-clutch gearbox&quot;, &quot;Executive five-seat layout&quot;], &quot;engineShort&quot;: &quot;2.0L turbo 4-cylinder&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;7-speed S tronic automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Tokumeigakarinoaoshima&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Audi_A4_S_line_Package_(B9)_front.JPG&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0&quot;}}" data-category="Sedan" data-price="54000000" data-name="Audi A4 2.0 TFSI">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Audi A4 2.0 TFSI details">
+    <img src="assets/audi-a4.webp" alt="Audi A4 2.0 TFSI — illustrative model photograph" width="1280" height="960" loading="lazy">
+    <span class="car-tag">Sedan</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Audi</p>
+    <h3><button type="button" data-open-car>A4 2.0 TFSI</button></h3>
+    <p class="car-trim">2.0 TFSI quattro <span>·</span> B9</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2019</dd></div><div><dt>Mileage</dt><dd>42,500 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">2.0L turbo 4-cylinder <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦54<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Audi A4 2.0 TFSI">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;porsche-boxster&quot;, &quot;make&quot;: &quot;Porsche&quot;, &quot;model&quot;: &quot;718 Boxster&quot;, &quot;title&quot;: &quot;718 Boxster S&quot;, &quot;trim&quot;: &quot;S 2.5 PDK&quot;, &quot;generation&quot;: &quot;982&quot;, &quot;type&quot;: &quot;Convertible&quot;, &quot;year&quot;: &quot;2018&quot;, &quot;price&quot;: 132000000, &quot;mileage&quot;: &quot;21,500&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;2.5L turbocharged flat-four&quot;, &quot;transmission&quot;: &quot;7-speed PDK automatic&quot;, &quot;drivetrain&quot;: &quot;Rear-wheel drive&quot;, &quot;seats&quot;: 2, &quot;doors&quot;: 2, &quot;name&quot;: &quot;Porsche 718 Boxster S&quot;, &quot;label&quot;: &quot;Convertible&quot;, &quot;image&quot;: &quot;porsche-boxster.webp&quot;, &quot;colour&quot;: &quot;Grey (pictured)&quot;, &quot;tag&quot;: &quot;Open-air driving&quot;, &quot;description&quot;: &quot;A mid-engined roadster designed around the drive. The 718 Boxster S pairs a turbocharged 2.5-litre flat-four with a folding fabric roof and a focused two-seat cabin.&quot;, &quot;features&quot;: [&quot;Electric folding fabric roof&quot;, &quot;Mid-engine layout&quot;, &quot;Two-seat roadster cabin&quot;, &quot;PDK dual-clutch gearbox&quot;], &quot;engineShort&quot;: &quot;2.5L turbo flat-four&quot;, &quot;driveShort&quot;: &quot;RWD&quot;, &quot;transmissionShort&quot;: &quot;7-speed PDK automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Vauxford&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:2018_Porsche_718_Boxster_S_S-A_2.5_Front.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0&quot;}}" data-category="Convertible" data-price="132000000" data-name="Porsche 718 Boxster S">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Porsche 718 Boxster S details">
+    <img src="assets/porsche-boxster.webp" alt="Porsche 718 Boxster S — illustrative model photograph" width="1280" height="587" loading="lazy">
+    <span class="car-tag">Convertible</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Porsche</p>
+    <h3><button type="button" data-open-car>718 Boxster S</button></h3>
+    <p class="car-trim">S 2.5 PDK <span>·</span> 982</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2018</dd></div><div><dt>Mileage</dt><dd>21,500 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">2.5L turbo flat-four <span>·</span> RWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦132<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Porsche 718 Boxster S">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;lexus-es&quot;, &quot;make&quot;: &quot;Lexus&quot;, &quot;model&quot;: &quot;ES&quot;, &quot;title&quot;: &quot;ES 350&quot;, &quot;trim&quot;: &quot;350&quot;, &quot;generation&quot;: &quot;XV70&quot;, &quot;type&quot;: &quot;Sedan&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;price&quot;: 76000000, &quot;mileage&quot;: &quot;25,500&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;3.5L naturally aspirated V6&quot;, &quot;transmission&quot;: &quot;8-speed automatic&quot;, &quot;drivetrain&quot;: &quot;Front-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 4, &quot;name&quot;: &quot;Lexus ES 350&quot;, &quot;label&quot;: &quot;Sedan&quot;, &quot;image&quot;: &quot;lexus-es.webp&quot;, &quot;colour&quot;: &quot;White (pictured)&quot;, &quot;tag&quot;: &quot;A calmer way to travel&quot;, &quot;description&quot;: &quot;The ES 350 is a spacious executive sedan with a naturally aspirated V6. Its long, elegant profile and relaxed cabin suit everyday journeys and longer drives alike.&quot;, &quot;features&quot;: [&quot;Lexus Safety System+&quot;, &quot;Spacious rear seating&quot;, &quot;Naturally aspirated V6&quot;, &quot;Eight-speed automatic&quot;], &quot;engineShort&quot;: &quot;3.5L V6&quot;, &quot;driveShort&quot;: &quot;FWD&quot;, &quot;transmissionShort&quot;: &quot;8-speed automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Kevauto&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:2019_Lexus_ES_350,_front_5.19.20.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0&quot;}}" data-category="Sedan" data-price="76000000" data-name="Lexus ES 350">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Lexus ES 350 details">
+    <img src="assets/lexus-es.webp" alt="Lexus ES 350 — illustrative model photograph" width="1280" height="621" loading="lazy">
+    <span class="car-tag">Sedan</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Lexus</p>
+    <h3><button type="button" data-open-car>ES 350</button></h3>
+    <p class="car-trim">350 <span>·</span> XV70</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2021</dd></div><div><dt>Mileage</dt><dd>25,500 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">3.5L V6 <span>·</span> FWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦76<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Lexus ES 350">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;lexus-is&quot;, &quot;make&quot;: &quot;Lexus&quot;, &quot;model&quot;: &quot;IS&quot;, &quot;title&quot;: &quot;IS 300&quot;, &quot;trim&quot;: &quot;300 RWD&quot;, &quot;generation&quot;: &quot;XE30&quot;, &quot;type&quot;: &quot;Sedan&quot;, &quot;year&quot;: &quot;2018&quot;, &quot;price&quot;: 58000000, &quot;mileage&quot;: &quot;32,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;2.0L turbocharged inline-four&quot;, &quot;transmission&quot;: &quot;8-speed automatic&quot;, &quot;drivetrain&quot;: &quot;Rear-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 4, &quot;name&quot;: &quot;Lexus IS 300&quot;, &quot;label&quot;: &quot;Sedan&quot;, &quot;image&quot;: &quot;lexus-is.webp&quot;, &quot;colour&quot;: &quot;Silver (pictured)&quot;, &quot;tag&quot;: &quot;Sporting sophistication&quot;, &quot;description&quot;: &quot;Compact executive proportions meet a driver-focused cabin. This IS 300 sample pairs a turbocharged four-cylinder engine with rear-wheel drive and an eight-speed automatic.&quot;, &quot;features&quot;: [&quot;Lexus Safety System+&quot;, &quot;Driver-focused cockpit&quot;, &quot;Five-seat sedan cabin&quot;, &quot;Turbocharged petrol engine&quot;], &quot;engineShort&quot;: &quot;2.0L turbo&quot;, &quot;driveShort&quot;: &quot;RWD&quot;, &quot;transmissionShort&quot;: &quot;8-speed automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;RL GNZLZ from Chile&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Lexus_iS_300_2018_(43239437142).jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 2.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/2.0&quot;}}" data-category="Sedan" data-price="58000000" data-name="Lexus IS 300">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Lexus IS 300 details">
+    <img src="assets/lexus-is.webp" alt="Lexus IS 300 — illustrative model photograph" width="1280" height="707" loading="lazy">
+    <span class="car-tag">Sedan</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Lexus</p>
+    <h3><button type="button" data-open-car>IS 300</button></h3>
+    <p class="car-trim">300 RWD <span>·</span> XE30</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2018</dd></div><div><dt>Mileage</dt><dd>32,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">2.0L turbo <span>·</span> RWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦58<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Lexus IS 300">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;lexus-gx&quot;, &quot;make&quot;: &quot;Lexus&quot;, &quot;model&quot;: &quot;GX&quot;, &quot;title&quot;: &quot;GX 460&quot;, &quot;trim&quot;: &quot;460 Premium&quot;, &quot;generation&quot;: &quot;J150&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;price&quot;: 108000000, &quot;mileage&quot;: &quot;44,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;4.6L naturally aspirated V8&quot;, &quot;transmission&quot;: &quot;6-speed automatic&quot;, &quot;drivetrain&quot;: &quot;Full-time four-wheel drive&quot;, &quot;seats&quot;: 7, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Lexus GX 460&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;lexus-gx.webp&quot;, &quot;colour&quot;: &quot;White (pictured)&quot;, &quot;tag&quot;: &quot;Capability with comfort&quot;, &quot;description&quot;: &quot;The GX 460 combines a traditional SUV chassis with a refined three-row cabin. V8 power and full-time four-wheel drive give this sample its distinctive character.&quot;, &quot;features&quot;: [&quot;Three-row seating&quot;, &quot;Body-on-frame construction&quot;, &quot;Low-range gearing&quot;, &quot;Full-time four-wheel drive&quot;], &quot;engineShort&quot;: &quot;4.6L V8&quot;, &quot;driveShort&quot;: &quot;4WD&quot;, &quot;transmissionShort&quot;: &quot;6-speed automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Kevauto&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:2018_Lexus_GX_460_(facelift),_front_4.26.23.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0&quot;}}" data-category="SUV" data-price="108000000" data-name="Lexus GX 460">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Lexus GX 460 details">
+    <img src="assets/lexus-gx.webp" alt="Lexus GX 460 — illustrative model photograph" width="1280" height="662" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Lexus</p>
+    <h3><button type="button" data-open-car>GX 460</button></h3>
+    <p class="car-trim">460 Premium <span>·</span> J150</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2020</dd></div><div><dt>Mileage</dt><dd>44,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">4.6L V8 <span>·</span> 4WD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦108<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Lexus GX 460">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;lexus-lx&quot;, &quot;make&quot;: &quot;Lexus&quot;, &quot;model&quot;: &quot;LX&quot;, &quot;title&quot;: &quot;LX 570&quot;, &quot;trim&quot;: &quot;570 three-row&quot;, &quot;generation&quot;: &quot;J200&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;price&quot;: 195000000, &quot;mileage&quot;: &quot;36,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;5.7L naturally aspirated V8&quot;, &quot;transmission&quot;: &quot;8-speed automatic&quot;, &quot;drivetrain&quot;: &quot;Full-time four-wheel drive&quot;, &quot;seats&quot;: 8, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Lexus LX 570&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;lexus-lx.webp&quot;, &quot;colour&quot;: &quot;Black (pictured)&quot;, &quot;tag&quot;: &quot;A commanding luxury SUV&quot;, &quot;description&quot;: &quot;The LX 570 brings a generous three-row layout to a substantial V8-powered SUV. This sample is configured with eight seats and full-time four-wheel drive.&quot;, &quot;features&quot;: [&quot;Eight-seat sample configuration&quot;, &quot;Body-on-frame construction&quot;, &quot;Low-range gearing&quot;, &quot;Naturally aspirated V8&quot;], &quot;engineShort&quot;: &quot;5.7L V8&quot;, &quot;driveShort&quot;: &quot;4WD&quot;, &quot;transmissionShort&quot;: &quot;8-speed automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Alexander Migl&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Lexus_LX_570_(URJ201W)_IMG_4913.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0&quot;}}" data-category="SUV" data-price="195000000" data-name="Lexus LX 570">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Lexus LX 570 details">
+    <img src="assets/lexus-lx.webp" alt="Lexus LX 570 — illustrative model photograph" width="1280" height="711" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Lexus</p>
+    <h3><button type="button" data-open-car>LX 570</button></h3>
+    <p class="car-trim">570 three-row <span>·</span> J200</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2020</dd></div><div><dt>Mileage</dt><dd>36,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">5.7L V8 <span>·</span> 4WD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦195<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Lexus LX 570">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;lexus-nx&quot;, &quot;make&quot;: &quot;Lexus&quot;, &quot;model&quot;: &quot;NX&quot;, &quot;title&quot;: &quot;NX 300&quot;, &quot;trim&quot;: &quot;300 AWD&quot;, &quot;generation&quot;: &quot;AZ10&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;price&quot;: 65000000, &quot;mileage&quot;: &quot;34,500&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;2.0L turbocharged inline-four&quot;, &quot;transmission&quot;: &quot;6-speed automatic&quot;, &quot;drivetrain&quot;: &quot;All-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Lexus NX 300&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;lexus-nx.webp&quot;, &quot;colour&quot;: &quot;White (pictured)&quot;, &quot;tag&quot;: &quot;City-ready refinement&quot;, &quot;description&quot;: &quot;The NX 300 brings distinctive Lexus styling to a compact SUV. A turbocharged petrol engine and an all-wheel-drive configuration make this sample easy to place in daily life.&quot;, &quot;features&quot;: [&quot;Lexus Safety System+&quot;, &quot;Five-seat SUV cabin&quot;, &quot;Turbocharged petrol engine&quot;, &quot;Flexible rear luggage space&quot;], &quot;engineShort&quot;: &quot;2.0L turbo 4-cylinder&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;6-speed automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Tokumeigakarinoaoshima&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Lexus_NX300%22I_package%22_(DBA-AGZ10-AWTLT)_front.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0&quot;}}" data-category="SUV" data-price="65000000" data-name="Lexus NX 300">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Lexus NX 300 details">
+    <img src="assets/lexus-nx.webp" alt="Lexus NX 300 — illustrative model photograph" width="1280" height="960" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Lexus</p>
+    <h3><button type="button" data-open-car>NX 300</button></h3>
+    <p class="car-trim">300 AWD <span>·</span> AZ10</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2020</dd></div><div><dt>Mileage</dt><dd>34,500 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">2.0L turbo 4-cylinder <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦65<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Lexus NX 300">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;toyota-corolla&quot;, &quot;make&quot;: &quot;Toyota&quot;, &quot;model&quot;: &quot;Corolla&quot;, &quot;title&quot;: &quot;Corolla SE&quot;, &quot;trim&quot;: &quot;SE 2.0&quot;, &quot;generation&quot;: &quot;E210&quot;, &quot;type&quot;: &quot;Sedan&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;price&quot;: 29000000, &quot;mileage&quot;: &quot;32,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;2.0L naturally aspirated inline-four&quot;, &quot;transmission&quot;: &quot;Dynamic-Shift CVT automatic&quot;, &quot;drivetrain&quot;: &quot;Front-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 4, &quot;name&quot;: &quot;Toyota Corolla SE&quot;, &quot;label&quot;: &quot;Sedan&quot;, &quot;image&quot;: &quot;toyota-corolla.webp&quot;, &quot;colour&quot;: &quot;White (pictured)&quot;, &quot;tag&quot;: &quot;A considered daily drive&quot;, &quot;description&quot;: &quot;A compact sedan with a practical cabin and a clean, modern profile. The SE 2.0 sample combines a petrol engine with Toyota’s Dynamic-Shift CVT.&quot;, &quot;features&quot;: [&quot;Toyota Safety Sense 2.0&quot;, &quot;Apple CarPlay and Android Auto&quot;, &quot;Five-seat cabin&quot;, &quot;Dynamic-Shift CVT&quot;], &quot;engineShort&quot;: &quot;2.0L 4-cylinder&quot;, &quot;driveShort&quot;: &quot;FWD&quot;, &quot;transmissionShort&quot;: &quot;Dynamic-Shift CVT automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Kevauto&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:2020_Toyota_Corolla_SE,_front_2.29.20.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0&quot;}}" data-category="Sedan" data-price="29000000" data-name="Toyota Corolla SE">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Toyota Corolla SE details">
+    <img src="assets/toyota-corolla.webp" alt="Toyota Corolla SE — illustrative model photograph" width="1280" height="671" loading="lazy">
+    <span class="car-tag">Sedan</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Toyota</p>
+    <h3><button type="button" data-open-car>Corolla SE</button></h3>
+    <p class="car-trim">SE 2.0 <span>·</span> E210</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2021</dd></div><div><dt>Mileage</dt><dd>32,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">2.0L 4-cylinder <span>·</span> FWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦29<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Toyota Corolla SE">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;toyota-rav4&quot;, &quot;make&quot;: &quot;Toyota&quot;, &quot;model&quot;: &quot;RAV4&quot;, &quot;title&quot;: &quot;RAV4 Hybrid&quot;, &quot;trim&quot;: &quot;Hybrid XLE AWD&quot;, &quot;generation&quot;: &quot;XA50&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;price&quot;: 61000000, &quot;mileage&quot;: &quot;29,000&quot;, &quot;fuel&quot;: &quot;Hybrid&quot;, &quot;engine&quot;: &quot;2.5L inline-four + electric motors&quot;, &quot;transmission&quot;: &quot;Electronic CVT automatic&quot;, &quot;drivetrain&quot;: &quot;Electric all-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Toyota RAV4 Hybrid&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;toyota-rav4.webp&quot;, &quot;colour&quot;: &quot;Red (pictured)&quot;, &quot;tag&quot;: &quot;Hybrid versatility&quot;, &quot;description&quot;: &quot;The RAV4 Hybrid combines a practical SUV body with a petrol-electric powertrain. This XLE sample offers electric all-wheel drive and space for five.&quot;, &quot;features&quot;: [&quot;Petrol-electric hybrid system&quot;, &quot;Electric all-wheel drive&quot;, &quot;Toyota Safety Sense 2.0&quot;, &quot;Split-folding rear seats&quot;], &quot;engineShort&quot;: &quot;2.5L 4-cylinder + electric motors&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;Electronic CVT automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;SsmIntrigue&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:2020_Toyota_Rav4_XLE,_Front_Left,_09-30-2020.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0&quot;}}" data-category="SUV" data-price="61000000" data-name="Toyota RAV4 Hybrid">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Toyota RAV4 Hybrid details">
+    <img src="assets/toyota-rav4.webp" alt="Toyota RAV4 Hybrid — illustrative model photograph" width="1280" height="611" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Toyota</p>
+    <h3><button type="button" data-open-car>RAV4 Hybrid</button></h3>
+    <p class="car-trim">Hybrid XLE AWD <span>·</span> XA50</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2021</dd></div><div><dt>Mileage</dt><dd>29,000 km</dd></div><div><dt>Fuel</dt><dd>Hybrid</dd></div></dl>
+    <p class="car-powertrain">2.5L 4-cylinder + electric motors <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦61<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Toyota RAV4 Hybrid">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;toyota-highlander&quot;, &quot;make&quot;: &quot;Toyota&quot;, &quot;model&quot;: &quot;Highlander&quot;, &quot;title&quot;: &quot;Highlander XLE&quot;, &quot;trim&quot;: &quot;XLE AWD&quot;, &quot;generation&quot;: &quot;XU70&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;price&quot;: 85000000, &quot;mileage&quot;: &quot;34,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;3.5L naturally aspirated V6&quot;, &quot;transmission&quot;: &quot;8-speed automatic&quot;, &quot;drivetrain&quot;: &quot;All-wheel drive&quot;, &quot;seats&quot;: 7, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Toyota Highlander XLE&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;toyota-highlander.webp&quot;, &quot;colour&quot;: &quot;Silver (pictured)&quot;, &quot;tag&quot;: &quot;Made for family journeys&quot;, &quot;description&quot;: &quot;The Highlander offers three-row flexibility in a composed family SUV. This seven-seat XLE sample combines a V6 petrol engine with all-wheel drive.&quot;, &quot;features&quot;: [&quot;Three-row cabin&quot;, &quot;Second-row captain’s chairs&quot;, &quot;Toyota Safety Sense 2.5+&quot;, &quot;Eight-speed automatic&quot;], &quot;engineShort&quot;: &quot;3.5L V6&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;8-speed automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Kevauto&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:2021_Toyota_Highlander_XLE_AWD,_front_12.12.20.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0&quot;}}" data-category="SUV" data-price="85000000" data-name="Toyota Highlander XLE">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Toyota Highlander XLE details">
+    <img src="assets/toyota-highlander.webp" alt="Toyota Highlander XLE — illustrative model photograph" width="1280" height="769" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Toyota</p>
+    <h3><button type="button" data-open-car>Highlander XLE</button></h3>
+    <p class="car-trim">XLE AWD <span>·</span> XU70</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2021</dd></div><div><dt>Mileage</dt><dd>34,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">3.5L V6 <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦85<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Toyota Highlander XLE">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;toyota-land-cruiser&quot;, &quot;make&quot;: &quot;Toyota&quot;, &quot;model&quot;: &quot;Land Cruiser&quot;, &quot;title&quot;: &quot;Land Cruiser 300&quot;, &quot;trim&quot;: &quot;ZX 3.5 Twin Turbo&quot;, &quot;generation&quot;: &quot;J300&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2022&quot;, &quot;price&quot;: 260000000, &quot;mileage&quot;: &quot;19,500&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;3.5L twin-turbo V6&quot;, &quot;transmission&quot;: &quot;10-speed automatic&quot;, &quot;drivetrain&quot;: &quot;Full-time four-wheel drive&quot;, &quot;seats&quot;: 7, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Toyota Land Cruiser 300&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;toyota-land-cruiser.webp&quot;, &quot;colour&quot;: &quot;White (pictured)&quot;, &quot;tag&quot;: &quot;A landmark SUV&quot;, &quot;description&quot;: &quot;The 300 Series continues the Land Cruiser’s full-size SUV format with a twin-turbo V6. This sample combines seven-seat versatility with full-time four-wheel drive.&quot;, &quot;features&quot;: [&quot;Body-on-frame construction&quot;, &quot;Seven-seat configuration&quot;, &quot;Low-range gearing&quot;, &quot;Twin-turbo V6 power&quot;], &quot;engineShort&quot;: &quot;3.5L twin-turbo V6&quot;, &quot;driveShort&quot;: &quot;4WD&quot;, &quot;transmissionShort&quot;: &quot;10-speed automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;LuvsMG481&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:2024_Toyota_Land_Cruiser_J300_VX_front.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0&quot;}}" data-category="SUV" data-price="260000000" data-name="Toyota Land Cruiser 300">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Toyota Land Cruiser 300 details">
+    <img src="assets/toyota-land-cruiser.webp" alt="Toyota Land Cruiser 300 — illustrative model photograph" width="1280" height="694" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Toyota</p>
+    <h3><button type="button" data-open-car>Land Cruiser 300</button></h3>
+    <p class="car-trim">ZX 3.5 Twin Turbo <span>·</span> J300</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2022</dd></div><div><dt>Mileage</dt><dd>19,500 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">3.5L twin-turbo V6 <span>·</span> 4WD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦260<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Toyota Land Cruiser 300">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;toyota-hilux&quot;, &quot;make&quot;: &quot;Toyota&quot;, &quot;model&quot;: &quot;Hilux&quot;, &quot;title&quot;: &quot;Hilux Double Cab&quot;, &quot;trim&quot;: &quot;2.8 D-4D 4x4&quot;, &quot;generation&quot;: &quot;AN120 / AN130&quot;, &quot;type&quot;: &quot;Pickup&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;price&quot;: 73000000, &quot;mileage&quot;: &quot;46,000&quot;, &quot;fuel&quot;: &quot;Diesel&quot;, &quot;engine&quot;: &quot;2.8L turbo-diesel inline-four&quot;, &quot;transmission&quot;: &quot;6-speed automatic&quot;, &quot;drivetrain&quot;: &quot;Selectable four-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 4, &quot;name&quot;: &quot;Toyota Hilux Double Cab&quot;, &quot;label&quot;: &quot;Pickup&quot;, &quot;image&quot;: &quot;toyota-hilux.webp&quot;, &quot;colour&quot;: &quot;White (pictured)&quot;, &quot;tag&quot;: &quot;Work meets adventure&quot;, &quot;description&quot;: &quot;A double-cab pickup with seating for five and an open load bed. This Hilux sample brings together a turbo-diesel engine, automatic gearbox and selectable four-wheel drive.&quot;, &quot;features&quot;: [&quot;Double-cab layout&quot;, &quot;Open rear load bed&quot;, &quot;Low-range gearing&quot;, &quot;Turbo-diesel power&quot;], &quot;engineShort&quot;: &quot;2.8L turbo-diesel 4-cylinder&quot;, &quot;driveShort&quot;: &quot;4WD&quot;, &quot;transmissionShort&quot;: &quot;6-speed automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;EurovisionNim&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Toyota_Hilux_Rogue_2nd_facelift_2020_front.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0&quot;}}" data-category="Pickup" data-price="73000000" data-name="Toyota Hilux Double Cab">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Toyota Hilux Double Cab details">
+    <img src="assets/toyota-hilux.webp" alt="Toyota Hilux Double Cab — illustrative model photograph" width="1280" height="651" loading="lazy">
+    <span class="car-tag">Pickup</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Toyota</p>
+    <h3><button type="button" data-open-car>Hilux Double Cab</button></h3>
+    <p class="car-trim">2.8 D-4D 4x4 <span>·</span> AN120 / AN130</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2021</dd></div><div><dt>Mileage</dt><dd>46,000 km</dd></div><div><dt>Fuel</dt><dd>Diesel</dd></div></dl>
+    <p class="car-powertrain">2.8L turbo-diesel 4-cylinder <span>·</span> 4WD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦73<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Toyota Hilux Double Cab">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;toyota-venza&quot;, &quot;make&quot;: &quot;Toyota&quot;, &quot;model&quot;: &quot;Venza&quot;, &quot;title&quot;: &quot;Venza Hybrid&quot;, &quot;trim&quot;: &quot;Hybrid Limited AWD&quot;, &quot;generation&quot;: &quot;XU80&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;price&quot;: 64000000, &quot;mileage&quot;: &quot;28,000&quot;, &quot;fuel&quot;: &quot;Hybrid&quot;, &quot;engine&quot;: &quot;2.5L inline-four + electric motors&quot;, &quot;transmission&quot;: &quot;Electronic CVT automatic&quot;, &quot;drivetrain&quot;: &quot;Electronic all-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Toyota Venza Hybrid&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;toyota-venza.webp&quot;, &quot;colour&quot;: &quot;White (pictured)&quot;, &quot;tag&quot;: &quot;A refined hybrid crossover&quot;, &quot;description&quot;: &quot;The Venza pairs a flowing crossover profile with a petrol-electric hybrid system. This five-seat sample offers electronic all-wheel drive for a composed everyday experience.&quot;, &quot;features&quot;: [&quot;Hybrid powertrain&quot;, &quot;Electronic all-wheel drive&quot;, &quot;Toyota Safety Sense 2.0&quot;, &quot;Five-seat crossover cabin&quot;], &quot;engineShort&quot;: &quot;2.5L 4-cylinder + electric motors&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;Electronic CVT automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Kevauto&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:2021_Toyota_Venza_XLE,_front_4.1.21.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0&quot;}}" data-category="SUV" data-price="64000000" data-name="Toyota Venza Hybrid">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Toyota Venza Hybrid details">
+    <img src="assets/toyota-venza.webp" alt="Toyota Venza Hybrid — illustrative model photograph" width="1280" height="806" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Toyota</p>
+    <h3><button type="button" data-open-car>Venza Hybrid</button></h3>
+    <p class="car-trim">Hybrid Limited AWD <span>·</span> XU80</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2021</dd></div><div><dt>Mileage</dt><dd>28,000 km</dd></div><div><dt>Fuel</dt><dd>Hybrid</dd></div></dl>
+    <p class="car-powertrain">2.5L 4-cylinder + electric motors <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦64<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Toyota Venza Hybrid">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;honda-civic&quot;, &quot;make&quot;: &quot;Honda&quot;, &quot;model&quot;: &quot;Civic&quot;, &quot;title&quot;: &quot;Civic EX&quot;, &quot;trim&quot;: &quot;EX 1.5T&quot;, &quot;generation&quot;: &quot;FC&quot;, &quot;type&quot;: &quot;Sedan&quot;, &quot;year&quot;: &quot;2019&quot;, &quot;price&quot;: 28000000, &quot;mileage&quot;: &quot;45,500&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;1.5L turbocharged inline-four&quot;, &quot;transmission&quot;: &quot;CVT automatic&quot;, &quot;drivetrain&quot;: &quot;Front-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 4, &quot;name&quot;: &quot;Honda Civic EX&quot;, &quot;label&quot;: &quot;Sedan&quot;, &quot;image&quot;: &quot;honda-civic.webp&quot;, &quot;colour&quot;: &quot;Grey (pictured)&quot;, &quot;tag&quot;: &quot;Compact and composed&quot;, &quot;description&quot;: &quot;The Civic EX combines a sleek sedan profile with useful cabin space. A turbocharged petrol engine and automatic CVT suit both everyday errands and longer journeys.&quot;, &quot;features&quot;: [&quot;Honda Sensing&quot;, &quot;Apple CarPlay and Android Auto&quot;, &quot;Five-seat sedan cabin&quot;, &quot;Turbocharged petrol engine&quot;], &quot;engineShort&quot;: &quot;1.5L turbo 4-cylinder&quot;, &quot;driveShort&quot;: &quot;FWD&quot;, &quot;transmissionShort&quot;: &quot;CVT automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Vauxford&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:2018_Honda_Civic_Saloon_Front.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0&quot;}}" data-category="Sedan" data-price="28000000" data-name="Honda Civic EX">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Honda Civic EX details">
+    <img src="assets/honda-civic.webp" alt="Honda Civic EX — illustrative model photograph" width="1280" height="653" loading="lazy">
+    <span class="car-tag">Sedan</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Honda</p>
+    <h3><button type="button" data-open-car>Civic EX</button></h3>
+    <p class="car-trim">EX 1.5T <span>·</span> FC</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2019</dd></div><div><dt>Mileage</dt><dd>45,500 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">1.5L turbo 4-cylinder <span>·</span> FWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦28<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Honda Civic EX">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;honda-crv&quot;, &quot;make&quot;: &quot;Honda&quot;, &quot;model&quot;: &quot;CR-V&quot;, &quot;title&quot;: &quot;CR-V EX&quot;, &quot;trim&quot;: &quot;EX AWD&quot;, &quot;generation&quot;: &quot;RW&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;price&quot;: 47000000, &quot;mileage&quot;: &quot;39,500&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;1.5L turbocharged inline-four&quot;, &quot;transmission&quot;: &quot;CVT automatic&quot;, &quot;drivetrain&quot;: &quot;All-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Honda CR-V EX&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;honda-crv.webp&quot;, &quot;colour&quot;: &quot;White (pictured)&quot;, &quot;tag&quot;: &quot;Practical by design&quot;, &quot;description&quot;: &quot;The CR-V puts useful space and everyday versatility at the heart of the experience. This EX sample pairs a turbocharged petrol engine with an automatic CVT and all-wheel drive.&quot;, &quot;features&quot;: [&quot;Honda Sensing&quot;, &quot;Five-seat SUV cabin&quot;, &quot;Split-folding rear seats&quot;, &quot;Turbocharged petrol engine&quot;], &quot;engineShort&quot;: &quot;1.5L turbo 4-cylinder&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;CVT automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Kevauto&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:2017_Honda_CR-V_front_4.11.18.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0&quot;}}" data-category="SUV" data-price="47000000" data-name="Honda CR-V EX">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Honda CR-V EX details">
+    <img src="assets/honda-crv.webp" alt="Honda CR-V EX — illustrative model photograph" width="1280" height="741" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Honda</p>
+    <h3><button type="button" data-open-car>CR-V EX</button></h3>
+    <p class="car-trim">EX AWD <span>·</span> RW</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2020</dd></div><div><dt>Mileage</dt><dd>39,500 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">1.5L turbo 4-cylinder <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦47<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Honda CR-V EX">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;honda-pilot&quot;, &quot;make&quot;: &quot;Honda&quot;, &quot;model&quot;: &quot;Pilot&quot;, &quot;title&quot;: &quot;Pilot EX-L&quot;, &quot;trim&quot;: &quot;EX-L AWD&quot;, &quot;generation&quot;: &quot;Third generation&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;price&quot;: 62000000, &quot;mileage&quot;: &quot;43,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;3.5L naturally aspirated V6&quot;, &quot;transmission&quot;: &quot;6-speed automatic&quot;, &quot;drivetrain&quot;: &quot;All-wheel drive&quot;, &quot;seats&quot;: 8, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Honda Pilot EX-L&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;honda-pilot.webp&quot;, &quot;colour&quot;: &quot;White (pictured)&quot;, &quot;tag&quot;: &quot;More room for everyone&quot;, &quot;description&quot;: &quot;The Pilot is a three-row SUV designed around space and flexibility. This EX-L sample offers eight seats, a V6 engine and an all-wheel-drive configuration.&quot;, &quot;features&quot;: [&quot;Eight-seat configuration&quot;, &quot;Honda Sensing&quot;, &quot;Three-row cabin&quot;, &quot;Naturally aspirated V6&quot;], &quot;engineShort&quot;: &quot;3.5L V6&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;6-speed automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Alexander-93&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Honda_Pilot_(third_generation)_DSC_6080.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0&quot;}}" data-category="SUV" data-price="62000000" data-name="Honda Pilot EX-L">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Honda Pilot EX-L details">
+    <img src="assets/honda-pilot.webp" alt="Honda Pilot EX-L — illustrative model photograph" width="1280" height="704" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Honda</p>
+    <h3><button type="button" data-open-car>Pilot EX-L</button></h3>
+    <p class="car-trim">EX-L AWD <span>·</span> Third generation</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2020</dd></div><div><dt>Mileage</dt><dd>43,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">3.5L V6 <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦62<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Honda Pilot EX-L">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;audi-q5&quot;, &quot;make&quot;: &quot;Audi&quot;, &quot;model&quot;: &quot;Q5&quot;, &quot;title&quot;: &quot;Q5 45 TFSI&quot;, &quot;trim&quot;: &quot;45 TFSI quattro&quot;, &quot;generation&quot;: &quot;FY&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2022&quot;, &quot;price&quot;: 65000000, &quot;mileage&quot;: &quot;37,500&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;2.0L turbocharged inline-four&quot;, &quot;transmission&quot;: &quot;7-speed S tronic automatic&quot;, &quot;drivetrain&quot;: &quot;quattro all-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Audi Q5 45 TFSI&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;audi-q5.webp&quot;, &quot;colour&quot;: &quot;Green-grey (pictured)&quot;, &quot;tag&quot;: &quot;Quietly capable&quot;, &quot;description&quot;: &quot;The Q5 combines a practical SUV layout with Audi’s clean design language. This sample features a turbocharged petrol engine, S tronic and quattro all-wheel drive.&quot;, &quot;features&quot;: [&quot;Audi MMI infotainment&quot;, &quot;quattro all-wheel drive&quot;, &quot;Five-seat cabin&quot;, &quot;S tronic dual-clutch gearbox&quot;], &quot;engineShort&quot;: &quot;2.0L turbo 4-cylinder&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;7-speed S tronic automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Alexander Migl&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Audi_Q5_FY_Facelift_IMG_5684.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;}}" data-category="SUV" data-price="65000000" data-name="Audi Q5 45 TFSI">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Audi Q5 45 TFSI details">
+    <img src="assets/audi-q5.webp" alt="Audi Q5 45 TFSI — illustrative model photograph" width="1280" height="769" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Audi</p>
+    <h3><button type="button" data-open-car>Q5 45 TFSI</button></h3>
+    <p class="car-trim">45 TFSI quattro <span>·</span> FY</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2022</dd></div><div><dt>Mileage</dt><dd>37,500 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">2.0L turbo 4-cylinder <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦65<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Audi Q5 45 TFSI">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;audi-e-tron&quot;, &quot;make&quot;: &quot;Audi&quot;, &quot;model&quot;: &quot;e-tron&quot;, &quot;title&quot;: &quot;e-tron 55 quattro&quot;, &quot;trim&quot;: &quot;55 quattro&quot;, &quot;generation&quot;: &quot;First generation&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;price&quot;: 118000000, &quot;mileage&quot;: &quot;23,000&quot;, &quot;fuel&quot;: &quot;Electric&quot;, &quot;engine&quot;: &quot;Dual electric motors&quot;, &quot;transmission&quot;: &quot;Single-speed automatic&quot;, &quot;drivetrain&quot;: &quot;Electric quattro all-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Audi e-tron 55 quattro&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;audi-e-tron.webp&quot;, &quot;colour&quot;: &quot;Blue (pictured)&quot;, &quot;tag&quot;: &quot;Electric refinement&quot;, &quot;description&quot;: &quot;Audi’s original e-tron brings dual-motor electric power to a spacious SUV. The 55 quattro configuration offers a familiar luxury cabin and smooth all-wheel-drive delivery.&quot;, &quot;features&quot;: [&quot;Dual-motor electric drive&quot;, &quot;Adaptive air suspension&quot;, &quot;Audi MMI touch response&quot;, &quot;DC rapid-charging capability&quot;], &quot;engineShort&quot;: &quot;Dual electric motors&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;Single-speed automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Johannes Maximilian&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Audi_e-tron_55_quattro_IAA_2019_JM_0345.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;}}" data-category="SUV" data-price="118000000" data-name="Audi e-tron 55 quattro">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Audi e-tron 55 quattro details">
+    <img src="assets/audi-e-tron.webp" alt="Audi e-tron 55 quattro — illustrative model photograph" width="1280" height="767" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Audi</p>
+    <h3><button type="button" data-open-car>e-tron 55 quattro</button></h3>
+    <p class="car-trim">55 quattro <span>·</span> First generation</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2021</dd></div><div><dt>Mileage</dt><dd>23,000 km</dd></div><div><dt>Fuel</dt><dd>Electric</dd></div></dl>
+    <p class="car-powertrain">Dual electric motors <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦118<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Audi e-tron 55 quattro">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;ford-explorer&quot;, &quot;make&quot;: &quot;Ford&quot;, &quot;model&quot;: &quot;Explorer&quot;, &quot;title&quot;: &quot;Explorer Limited&quot;, &quot;trim&quot;: &quot;Limited 2.3 EcoBoost 4WD&quot;, &quot;generation&quot;: &quot;Sixth generation&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;price&quot;: 74000000, &quot;mileage&quot;: &quot;31,500&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;2.3L turbocharged inline-four&quot;, &quot;transmission&quot;: &quot;10-speed automatic&quot;, &quot;drivetrain&quot;: &quot;Intelligent four-wheel drive&quot;, &quot;seats&quot;: 6, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Ford Explorer Limited&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;ford-explorer.webp&quot;, &quot;colour&quot;: &quot;Silver (pictured)&quot;, &quot;tag&quot;: &quot;Room to go further&quot;, &quot;description&quot;: &quot;The Explorer combines a substantial SUV profile with a flexible three-row interior. This Limited sample uses a turbocharged EcoBoost engine and a ten-speed automatic.&quot;, &quot;features&quot;: [&quot;Three-row cabin&quot;, &quot;Second-row captain’s chairs&quot;, &quot;Ford SYNC infotainment&quot;, &quot;Intelligent four-wheel drive&quot;], &quot;engineShort&quot;: &quot;2.3L turbo 4-cylinder&quot;, &quot;driveShort&quot;: &quot;4WD&quot;, &quot;transmissionShort&quot;: &quot;10-speed automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Kevauto&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:2020_Ford_Explorer_XLT_(2),_front_9.7.20.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;}}" data-category="SUV" data-price="74000000" data-name="Ford Explorer Limited">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Ford Explorer Limited details">
+    <img src="assets/ford-explorer.webp" alt="Ford Explorer Limited — illustrative model photograph" width="1280" height="752" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Ford</p>
+    <h3><button type="button" data-open-car>Explorer Limited</button></h3>
+    <p class="car-trim">Limited 2.3 EcoBoost 4WD <span>·</span> Sixth generation</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2021</dd></div><div><dt>Mileage</dt><dd>31,500 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">2.3L turbo 4-cylinder <span>·</span> 4WD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦74<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Ford Explorer Limited">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;ford-f150&quot;, &quot;make&quot;: &quot;Ford&quot;, &quot;model&quot;: &quot;F-150&quot;, &quot;title&quot;: &quot;F-150 Lariat&quot;, &quot;trim&quot;: &quot;Lariat 3.5 EcoBoost SuperCrew&quot;, &quot;generation&quot;: &quot;Fourteenth generation&quot;, &quot;type&quot;: &quot;Pickup&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;price&quot;: 108000000, &quot;mileage&quot;: &quot;36,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;3.5L twin-turbo V6&quot;, &quot;transmission&quot;: &quot;10-speed automatic&quot;, &quot;drivetrain&quot;: &quot;Selectable four-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 4, &quot;name&quot;: &quot;Ford F-150 Lariat&quot;, &quot;label&quot;: &quot;Pickup&quot;, &quot;image&quot;: &quot;ford-f150.webp&quot;, &quot;colour&quot;: &quot;White (pictured)&quot;, &quot;tag&quot;: &quot;A different kind of presence&quot;, &quot;description&quot;: &quot;A full-size pickup with a spacious SuperCrew cabin and a separate load bed. This Lariat sample combines the 3.5 EcoBoost V6 with a ten-speed automatic.&quot;, &quot;features&quot;: [&quot;SuperCrew four-door cabin&quot;, &quot;Open rear load bed&quot;, &quot;Twin-turbo EcoBoost V6&quot;, &quot;Selectable four-wheel drive&quot;], &quot;engineShort&quot;: &quot;3.5L twin-turbo V6&quot;, &quot;driveShort&quot;: &quot;4WD&quot;, &quot;transmissionShort&quot;: &quot;10-speed automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Bull-Doser&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Ford_F-150_2021-2023_Crew_Cab_ACI.JPG&quot;, &quot;license&quot;: &quot;Public domain (PD-self)&quot;, &quot;licenseUrl&quot;: &quot;https://commons.wikimedia.org/wiki/File:Ford_F-150_2021-2023_Crew_Cab_ACI.JPG#Licensing&quot;}}" data-category="Pickup" data-price="108000000" data-name="Ford F-150 Lariat">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Ford F-150 Lariat details">
+    <img src="assets/ford-f150.webp" alt="Ford F-150 Lariat — illustrative model photograph" width="1280" height="528" loading="lazy">
+    <span class="car-tag">Pickup</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Ford</p>
+    <h3><button type="button" data-open-car>F-150 Lariat</button></h3>
+    <p class="car-trim">Lariat 3.5 EcoBoost SuperCrew <span>·</span> Fourteenth generation</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2021</dd></div><div><dt>Mileage</dt><dd>36,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">3.5L twin-turbo V6 <span>·</span> 4WD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦108<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Ford F-150 Lariat">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;hyundai-tucson&quot;, &quot;make&quot;: &quot;Hyundai&quot;, &quot;model&quot;: &quot;Tucson&quot;, &quot;title&quot;: &quot;Tucson Limited&quot;, &quot;trim&quot;: &quot;Limited 2.5 AWD&quot;, &quot;generation&quot;: &quot;NX4&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2022&quot;, &quot;price&quot;: 49000000, &quot;mileage&quot;: &quot;24,500&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;2.5L naturally aspirated inline-four&quot;, &quot;transmission&quot;: &quot;8-speed automatic&quot;, &quot;drivetrain&quot;: &quot;All-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Hyundai Tucson Limited&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;hyundai-tucson.webp&quot;, &quot;colour&quot;: &quot;Grey (pictured)&quot;, &quot;tag&quot;: &quot;Fresh perspective&quot;, &quot;description&quot;: &quot;The Tucson brings sharply drawn exterior lines to a practical five-seat SUV. This Limited sample combines a 2.5-litre petrol engine with an eight-speed automatic.&quot;, &quot;features&quot;: [&quot;Five-seat SUV cabin&quot;, &quot;Split-folding rear seats&quot;, &quot;Hyundai SmartSense&quot;, &quot;All-wheel-drive configuration&quot;], &quot;engineShort&quot;: &quot;2.5L 4-cylinder&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;8-speed automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Alexander Migl&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Hyundai_Tucson_(NX4)_IMG_3676.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;}}" data-category="SUV" data-price="49000000" data-name="Hyundai Tucson Limited">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Hyundai Tucson Limited details">
+    <img src="assets/hyundai-tucson.webp" alt="Hyundai Tucson Limited — illustrative model photograph" width="1280" height="678" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Hyundai</p>
+    <h3><button type="button" data-open-car>Tucson Limited</button></h3>
+    <p class="car-trim">Limited 2.5 AWD <span>·</span> NX4</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2022</dd></div><div><dt>Mileage</dt><dd>24,500 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">2.5L 4-cylinder <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦49<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Hyundai Tucson Limited">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;hyundai-santa-fe&quot;, &quot;make&quot;: &quot;Hyundai&quot;, &quot;model&quot;: &quot;Santa Fe&quot;, &quot;title&quot;: &quot;Santa Fe Hybrid&quot;, &quot;trim&quot;: &quot;Hybrid Limited AWD&quot;, &quot;generation&quot;: &quot;TM&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;price&quot;: 57000000, &quot;mileage&quot;: &quot;31,000&quot;, &quot;fuel&quot;: &quot;Hybrid&quot;, &quot;engine&quot;: &quot;1.6L turbocharged inline-four + electric motor&quot;, &quot;transmission&quot;: &quot;6-speed automatic&quot;, &quot;drivetrain&quot;: &quot;HTRAC all-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Hyundai Santa Fe Hybrid&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;hyundai-santa-fe.webp&quot;, &quot;colour&quot;: &quot;Black (pictured)&quot;, &quot;tag&quot;: &quot;Considered family comfort&quot;, &quot;description&quot;: &quot;A spacious five-seat SUV with a composed cabin and useful luggage space. This hybrid sample combines a turbocharged 1.6-litre engine, an electric motor and a six-speed automatic.&quot;, &quot;features&quot;: [&quot;Five-seat configuration&quot;, &quot;Hyundai SmartSense&quot;, &quot;Split-folding rear seats&quot;, &quot;Petrol-electric hybrid powertrain&quot;], &quot;engineShort&quot;: &quot;1.6L turbo hybrid&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;6-speed automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Alexander Migl&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Hyundai_Santa_Fe_(TM)_FL_IMG_4107.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;}}" data-category="SUV" data-price="57000000" data-name="Hyundai Santa Fe Hybrid">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Hyundai Santa Fe Hybrid details">
+    <img src="assets/hyundai-santa-fe.webp" alt="Hyundai Santa Fe Hybrid — illustrative model photograph" width="1280" height="621" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Hyundai</p>
+    <h3><button type="button" data-open-car>Santa Fe Hybrid</button></h3>
+    <p class="car-trim">Hybrid Limited AWD <span>·</span> TM</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2021</dd></div><div><dt>Mileage</dt><dd>31,000 km</dd></div><div><dt>Fuel</dt><dd>Hybrid</dd></div></dl>
+    <p class="car-powertrain">1.6L turbo hybrid <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦57<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Hyundai Santa Fe Hybrid">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;kia-sportage&quot;, &quot;make&quot;: &quot;Kia&quot;, &quot;model&quot;: &quot;Sportage&quot;, &quot;title&quot;: &quot;Sportage GT-Line&quot;, &quot;trim&quot;: &quot;GT-Line 1.6 T-GDi AWD&quot;, &quot;generation&quot;: &quot;NQ5&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2023&quot;, &quot;price&quot;: 55000000, &quot;mileage&quot;: &quot;17,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;1.6L turbocharged inline-four&quot;, &quot;transmission&quot;: &quot;7-speed dual-clutch automatic&quot;, &quot;drivetrain&quot;: &quot;All-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Kia Sportage GT-Line&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;kia-sportage.webp&quot;, &quot;colour&quot;: &quot;Silver (pictured)&quot;, &quot;tag&quot;: &quot;Distinctive from every angle&quot;, &quot;description&quot;: &quot;The Sportage brings bold lighting and a contemporary cabin to the compact SUV class. This GT-Line sample uses a turbocharged petrol engine and a dual-clutch gearbox.&quot;, &quot;features&quot;: [&quot;GT-Line styling&quot;, &quot;Five-seat cabin&quot;, &quot;Split-folding rear seats&quot;, &quot;All-wheel-drive configuration&quot;], &quot;engineShort&quot;: &quot;1.6L turbo 4-cylinder&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;7-speed dual-clutch automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Alexander Migl&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:Kia_Sportage_(NQ5)_1X7A0326_(edited).jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;}}" data-category="SUV" data-price="55000000" data-name="Kia Sportage GT-Line">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Kia Sportage GT-Line details">
+    <img src="assets/kia-sportage.webp" alt="Kia Sportage GT-Line — illustrative model photograph" width="1280" height="694" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Kia</p>
+    <h3><button type="button" data-open-car>Sportage GT-Line</button></h3>
+    <p class="car-trim">GT-Line 1.6 T-GDi AWD <span>·</span> NQ5</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2023</dd></div><div><dt>Mileage</dt><dd>17,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">1.6L turbo 4-cylinder <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦55<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Kia Sportage GT-Line">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;kia-sorento&quot;, &quot;make&quot;: &quot;Kia&quot;, &quot;model&quot;: &quot;Sorento&quot;, &quot;title&quot;: &quot;Sorento SX&quot;, &quot;trim&quot;: &quot;SX 2.5T AWD&quot;, &quot;generation&quot;: &quot;MQ4&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;price&quot;: 64000000, &quot;mileage&quot;: &quot;28,500&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;2.5L turbocharged inline-four&quot;, &quot;transmission&quot;: &quot;8-speed dual-clutch automatic&quot;, &quot;drivetrain&quot;: &quot;All-wheel drive&quot;, &quot;seats&quot;: 6, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Kia Sorento SX&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;kia-sorento.webp&quot;, &quot;colour&quot;: &quot;White (pictured)&quot;, &quot;tag&quot;: &quot;Flexible by nature&quot;, &quot;description&quot;: &quot;The Sorento offers a practical three-row layout in a refined family SUV. This SX sample is configured with six seats, a turbocharged engine and all-wheel drive.&quot;, &quot;features&quot;: [&quot;Three-row cabin&quot;, &quot;Second-row captain’s chairs&quot;, &quot;Turbocharged petrol engine&quot;, &quot;Dual-clutch automatic&quot;], &quot;engineShort&quot;: &quot;2.5L turbo 4-cylinder&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;8-speed dual-clutch automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Benespit&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:2023_Kia_Sorento_MQ4_1.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;}}" data-category="SUV" data-price="64000000" data-name="Kia Sorento SX">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Kia Sorento SX details">
+    <img src="assets/kia-sorento.webp" alt="Kia Sorento SX — illustrative model photograph" width="1280" height="767" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Kia</p>
+    <h3><button type="button" data-open-car>Sorento SX</button></h3>
+    <p class="car-trim">SX 2.5T AWD <span>·</span> MQ4</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2021</dd></div><div><dt>Mileage</dt><dd>28,500 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">2.5L turbo 4-cylinder <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦64<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Kia Sorento SX">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;nissan-patrol&quot;, &quot;make&quot;: &quot;Nissan&quot;, &quot;model&quot;: &quot;Patrol&quot;, &quot;title&quot;: &quot;Patrol Ti&quot;, &quot;trim&quot;: &quot;Ti 5.6 V8&quot;, &quot;generation&quot;: &quot;Y62&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;price&quot;: 115000000, &quot;mileage&quot;: &quot;37,000&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;5.6L naturally aspirated V8&quot;, &quot;transmission&quot;: &quot;7-speed automatic&quot;, &quot;drivetrain&quot;: &quot;Full-time four-wheel drive&quot;, &quot;seats&quot;: 8, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Nissan Patrol Ti&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;nissan-patrol.webp&quot;, &quot;colour&quot;: &quot;White (pictured)&quot;, &quot;tag&quot;: &quot;Full-size capability&quot;, &quot;description&quot;: &quot;A substantial SUV with a naturally aspirated V8 and a generous cabin. This Y62 Patrol Ti sample is configured for eight passengers and full-time four-wheel drive.&quot;, &quot;features&quot;: [&quot;Eight-seat configuration&quot;, &quot;Naturally aspirated V8&quot;, &quot;Low-range gearing&quot;, &quot;Body-on-frame construction&quot;], &quot;engineShort&quot;: &quot;5.6L V8&quot;, &quot;driveShort&quot;: &quot;4WD&quot;, &quot;transmissionShort&quot;: &quot;7-speed automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Dinkun Chen&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:NISSAN_PATROL_Y62_China_(12).jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;}}" data-category="SUV" data-price="115000000" data-name="Nissan Patrol Ti">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Nissan Patrol Ti details">
+    <img src="assets/nissan-patrol.webp" alt="Nissan Patrol Ti — illustrative model photograph" width="1280" height="785" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Nissan</p>
+    <h3><button type="button" data-open-car>Patrol Ti</button></h3>
+    <p class="car-trim">Ti 5.6 V8 <span>·</span> Y62</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2020</dd></div><div><dt>Mileage</dt><dd>37,000 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">5.6L V8 <span>·</span> 4WD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦115<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Nissan Patrol Ti">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;nissan-navara&quot;, &quot;make&quot;: &quot;Nissan&quot;, &quot;model&quot;: &quot;Navara&quot;, &quot;title&quot;: &quot;Navara Double Cab&quot;, &quot;trim&quot;: &quot;2.3 dCi 4x4&quot;, &quot;generation&quot;: &quot;D23&quot;, &quot;type&quot;: &quot;Pickup&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;price&quot;: 49000000, &quot;mileage&quot;: &quot;42,000&quot;, &quot;fuel&quot;: &quot;Diesel&quot;, &quot;engine&quot;: &quot;2.3L twin-turbo diesel inline-four&quot;, &quot;transmission&quot;: &quot;7-speed automatic&quot;, &quot;drivetrain&quot;: &quot;Selectable four-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 4, &quot;name&quot;: &quot;Nissan Navara Double Cab&quot;, &quot;label&quot;: &quot;Pickup&quot;, &quot;image&quot;: &quot;nissan-navara.webp&quot;, &quot;colour&quot;: &quot;Red (pictured)&quot;, &quot;tag&quot;: &quot;Ready for different demands&quot;, &quot;description&quot;: &quot;The Navara combines a double-cab interior with the versatility of an open load bed. This sample pairs a twin-turbo diesel with an automatic gearbox and selectable four-wheel drive.&quot;, &quot;features&quot;: [&quot;Five-seat double cab&quot;, &quot;Open rear load bed&quot;, &quot;Low-range gearing&quot;, &quot;Twin-turbo diesel power&quot;], &quot;engineShort&quot;: &quot;2.3L twin-turbo diesel 4-cylinder&quot;, &quot;driveShort&quot;: &quot;4WD&quot;, &quot;transmissionShort&quot;: &quot;7-speed automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Vogue2Voke&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:2021_Nissan_Navara_facelift_(cropped).jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;}}" data-category="Pickup" data-price="49000000" data-name="Nissan Navara Double Cab">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Nissan Navara Double Cab details">
+    <img src="assets/nissan-navara.webp" alt="Nissan Navara Double Cab — illustrative model photograph" width="1280" height="748" loading="lazy">
+    <span class="car-tag">Pickup</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Nissan</p>
+    <h3><button type="button" data-open-car>Navara Double Cab</button></h3>
+    <p class="car-trim">2.3 dCi 4x4 <span>·</span> D23</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2021</dd></div><div><dt>Mileage</dt><dd>42,000 km</dd></div><div><dt>Fuel</dt><dd>Diesel</dd></div></dl>
+    <p class="car-powertrain">2.3L twin-turbo diesel 4-cylinder <span>·</span> 4WD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦49<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Nissan Navara Double Cab">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;tesla-model-3&quot;, &quot;make&quot;: &quot;Tesla&quot;, &quot;model&quot;: &quot;Model 3&quot;, &quot;title&quot;: &quot;Model 3 Long Range&quot;, &quot;trim&quot;: &quot;Long Range AWD&quot;, &quot;generation&quot;: &quot;Pre-Highland&quot;, &quot;type&quot;: &quot;Sedan&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;price&quot;: 89000000, &quot;mileage&quot;: &quot;26,000&quot;, &quot;fuel&quot;: &quot;Electric&quot;, &quot;engine&quot;: &quot;Dual electric motors&quot;, &quot;transmission&quot;: &quot;Single-speed automatic&quot;, &quot;drivetrain&quot;: &quot;All-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 4, &quot;name&quot;: &quot;Tesla Model 3 Long Range&quot;, &quot;label&quot;: &quot;Sedan&quot;, &quot;image&quot;: &quot;tesla-model-3.webp&quot;, &quot;colour&quot;: &quot;White (pictured)&quot;, &quot;tag&quot;: &quot;A simpler electric experience&quot;, &quot;description&quot;: &quot;The Model 3 combines a minimal cabin with a compact sedan profile. This Long Range sample uses two electric motors and all-wheel drive.&quot;, &quot;features&quot;: [&quot;Central touchscreen&quot;, &quot;Glass roof&quot;, &quot;Regenerative braking&quot;, &quot;Dual-motor all-wheel drive&quot;], &quot;engineShort&quot;: &quot;Dual electric motors&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;Single-speed automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;Fiver, der Hellseher&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:White_Tesla_Model_3_(front).jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;}}" data-category="Sedan" data-price="89000000" data-name="Tesla Model 3 Long Range">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Tesla Model 3 Long Range details">
+    <img src="assets/tesla-model-3.webp" alt="Tesla Model 3 Long Range — illustrative model photograph" width="1280" height="960" loading="lazy">
+    <span class="car-tag">Sedan</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Tesla</p>
+    <h3><button type="button" data-open-car>Model 3 Long Range</button></h3>
+    <p class="car-trim">Long Range AWD <span>·</span> Pre-Highland</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2021</dd></div><div><dt>Mileage</dt><dd>26,000 km</dd></div><div><dt>Fuel</dt><dd>Electric</dd></div></dl>
+    <p class="car-powertrain">Dual electric motors <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦89<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Tesla Model 3 Long Range">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+<div class="col vehicle-slot"><article class="car-card reveal" data-car="{&quot;id&quot;: &quot;porsche-cayenne&quot;, &quot;make&quot;: &quot;Porsche&quot;, &quot;model&quot;: &quot;Cayenne&quot;, &quot;title&quot;: &quot;Cayenne&quot;, &quot;trim&quot;: &quot;3.0 Tiptronic S&quot;, &quot;generation&quot;: &quot;Third generation&quot;, &quot;type&quot;: &quot;SUV&quot;, &quot;year&quot;: &quot;2019&quot;, &quot;price&quot;: 129000000, &quot;mileage&quot;: &quot;33,500&quot;, &quot;fuel&quot;: &quot;Petrol&quot;, &quot;engine&quot;: &quot;3.0L turbocharged V6&quot;, &quot;transmission&quot;: &quot;8-speed Tiptronic S automatic&quot;, &quot;drivetrain&quot;: &quot;All-wheel drive&quot;, &quot;seats&quot;: 5, &quot;doors&quot;: 5, &quot;name&quot;: &quot;Porsche Cayenne&quot;, &quot;label&quot;: &quot;SUV&quot;, &quot;image&quot;: &quot;porsche-cayenne.webp&quot;, &quot;colour&quot;: &quot;Black (pictured)&quot;, &quot;tag&quot;: &quot;Everyday sporting character&quot;, &quot;description&quot;: &quot;The third-generation Cayenne combines a versatile SUV cabin with a driver-focused layout. This sample pairs a turbocharged V6 with an eight-speed Tiptronic S gearbox.&quot;, &quot;features&quot;: [&quot;Porsche Communication Management&quot;, &quot;Five-seat cabin&quot;, &quot;All-wheel drive&quot;, &quot;Tiptronic S automatic&quot;], &quot;engineShort&quot;: &quot;3.0L turbo V6&quot;, &quot;driveShort&quot;: &quot;AWD&quot;, &quot;transmissionShort&quot;: &quot;8-speed Tiptronic S automatic&quot;, &quot;imageFit&quot;: &quot;contain&quot;, &quot;credit&quot;: {&quot;author&quot;: &quot;EurovisionNim&quot;, &quot;source&quot;: &quot;https://commons.wikimedia.org/wiki/File:2018_Porsche_Cayenne_(9YA_MY19)_Turbo_4WD_wagon_(2018-09-28)_01.jpg&quot;, &quot;license&quot;: &quot;CC BY-SA 4.0&quot;, &quot;licenseUrl&quot;: &quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;}}" data-category="SUV" data-price="129000000" data-name="Porsche Cayenne">
+  <button type="button" class="car-image-button photo-contain" data-open-car aria-label="View Porsche Cayenne details">
+    <img src="assets/porsche-cayenne.webp" alt="Porsche Cayenne — illustrative model photograph" width="1280" height="614" loading="lazy">
+    <span class="car-tag">SUV</span><span class="image-open"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+  </button>
+  <div class="car-body">
+    <p class="car-kicker">Porsche</p>
+    <h3><button type="button" data-open-car>Cayenne</button></h3>
+    <p class="car-trim">3.0 Tiptronic S <span>·</span> Third generation</p>
+    <dl class="car-quick-specs"><div><dt>Model year</dt><dd>2019</dd></div><div><dt>Mileage</dt><dd>33,500 km</dd></div><div><dt>Fuel</dt><dd>Petrol</dd></div></dl>
+    <p class="car-powertrain">3.0L turbo V6 <span>·</span> AWD</p>
+    <div class="car-bottom"><div><span class="price-label">Sample price</span><span class="car-price">₦129<small> million</small></span></div><button type="button" class="text-link" data-open-car aria-label="View specifications for Porsche Cayenne">View details <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+  </div>
+</article></div>
+</div>
+<div class="empty-state" id="empty-state" hidden>
+<span class="empty-mark">M.</span>
+<h2>A different route, perhaps?</h2>
+<p>No cars match those filters. Try another make or body style.</p>
+<button class="button button-dark" id="reset-filters">Reset filters <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+<path d="M5 12h14m-6-6 6 6-6 6"/>
+</svg>
+</button>
+</div>
+<p class="inventory-note">Presentation collection. Prices, model years, mileage and configurations are examples. Photographs may show a different trim; confirm actual stock and specifications before purchase.</p>
+<noscript>
+<p class="noscript-note">Enable JavaScript to filter cars and open vehicle details. You can still browse every listing and <a href="contact.html">contact us</a>.</p>
+</noscript>
+</div>
+</section>
+<section class="small-cta">
+<div class="container">
+<div>
+<p class="eyebrow">SOMETHING SPECIFIC IN MIND?</p>
+<h2>Tell us what you’re looking for.</h2>
+</div>
+<a class="button button-accent" href="contact.html">Start a conversation <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+<path d="M6 18 18 6M6 6h12v12"/>
+</svg>
+</a>
+</div>
+</section>
+<dialog class="vehicle-dialog" id="vehicle-dialog" aria-labelledby="vehicle-title">
+<button type="button" class="dialog-close" aria-label="Close vehicle details">
+<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+<path d="m6 6 12 12M6 18 18 6"/>
+</svg>
+</button>
+<div class="vehicle-photo">
+<img id="vehicle-image" src="assets/porsche.webp" alt="" width="1000" height="700">
+<p class="vehicle-photo-credit" id="vehicle-photo-credit" hidden></p>
+</div>
+<div class="vehicle-details">
+<p class="eyebrow dark" id="vehicle-category">
+</p>
+<h2 id="vehicle-title">
+</h2>
+<p class="vehicle-variant" id="vehicle-variant"></p>
+<p class="vehicle-price" id="vehicle-price">
+</p>
+<p id="vehicle-description">
+</p>
+<h3 class="detail-section-title">Specifications</h3>
+<dl class="vehicle-specs" id="vehicle-specs">
+</dl>
+<h3 class="detail-section-title">Model highlights</h3>
+<ul class="vehicle-features" id="vehicle-features">
+</ul>
+<section class="photo-enquiry" id="vehicle-photo-enquiry" aria-label="Photo for this enquiry" hidden>
+  <div class="photo-summary">
+    <img data-photo-image src="assets/porsche.webp" alt="" width="1000" height="700" loading="lazy">
+    <div><p class="photo-label">YOUR ENQUIRY PHOTO</p><strong data-photo-name></strong><span data-photo-meta></span></div>
+  </div>
+  <p class="photo-help" data-photo-help>Save this car photo first. Then open the WhatsApp chat and attach it before sending.</p>
+  <div class="photo-actions">
+    <button type="button" class="button photo-share" data-photo-share hidden disabled>Share photo &amp; enquiry</button>
+    <button type="button" class="button photo-copy" data-photo-copy hidden disabled>Copy photo for WhatsApp Web</button>
+    <a class="photo-download" data-photo-download target="_blank" rel="noopener noreferrer" href="assets/enquiries/porsche-911.jpg" download="MPILO-2016-porsche-911.jpg">Download photo <span aria-hidden="true">↓</span></a>
+  </div>
+  <p class="photo-credit" data-photo-credit hidden></p>
+  <p class="photo-status" data-photo-status role="status" aria-live="polite"></p>
+  <a class="button photo-continue" data-photo-continue target="_blank" rel="noopener noreferrer" hidden>2. Open WhatsApp and attach photo</a>
+</section>
+<button type="button" class="button button-dark full-width" id="vehicle-enquiry"><span>Enquire with photo</span> <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></button>
+<a class="vehicle-contact-link" id="vehicle-contact-form" href="contact.html">Prefer to write a detailed enquiry?</a>
+<p class="fine-print">Sample listing, not confirmed stock. Price, year, mileage and configuration are examples. Photograph may show a different trim. Ask us to confirm vehicle-specific details.</p>
+</div>
+</dialog>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-top">
+<a class="brand" href="index.html" aria-label="MPILO AUTO WORLD HUB LIMITED home">
+  <img class="brand-logo" src="assets/mpilo-logo-mark.png" alt="" width="512" height="501">
+  <span class="brand-copy"><span class="brand-name">MPILO</span><span class="brand-sub">AUTO WORLD HUB LIMITED</span></span>
+</a>
+<p>DRIVE WITH CONFIDENCE</p>
+<a class="text-link" data-whatsapp href="https://wa.me/2349077509019?text=Hello%20MPILO%20AUTO%20WORLD%20HUB%20LIMITED%2C%20I%20would%20like%20to%20enquire%20about%20a%20vehicle." target="_blank" rel="noopener noreferrer">Chat on WhatsApp <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+<path d="M6 18 18 6M6 6h12v12"/>
+</svg>
+</a>
+</div>
+<div class="footer-bottom">
+<span>© <span data-year>2026</span> MPILO AUTO WORLD HUB LIMITED</span>
+<span class="demo-note">Concept showroom · Sample vehicles &amp; prices</span>
+<div>
+<a href="collection.html">Collection</a>
+<a href="about.html">Our story</a>
+<a href="contact.html">Contact</a>
+<a href="about.html#photography">Photo credits</a>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>
